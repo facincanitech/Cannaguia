@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="theme-color" content="#1B5E20" />
+  <meta name="description" content="Guia informativo sobre cannabis medicinal no Brasil — canabinoides, cultivo, lei, associações e quiz de direcionamento." />
+  <title>CannaGuia — Cannabis Medicinal</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="logo.png" type="image/png" />
+  <link rel="apple-touch-icon" href="logo.png" />
+</head>
+<body>
+<div id="app">
+
+  <!-- ── HOME ─────────────────────────────────────────────────────────────── -->
+  <div id="screen-home" class="screen">
+    <div class="scroll-area">
+      <div class="home-logo-row">
+        <img class="home-logo" src="logo.png" alt="CannaGuia logo" />
+        <div>
+          <div class="home-title">CannaGuia</div>
+          <div class="home-sub">Cannabis Medicinal no Brasil</div>
+        </div>
+      </div>
+
+      <div class="search-wrap">
+        <span class="search-icon">🔍</span>
+        <input
+          id="search-input"
+          class="search-input"
+          type="search"
+          placeholder="Buscar em todo o conteúdo…"
+          oninput="onSearch(this.value)"
+          autocomplete="off"
+        />
+      </div>
+
+      <div id="search-results"></div>
+
+      <div id="menu-grid" class="menu-grid"></div>
+
+      <div class="home-credit">
+        <span>Criado por FacincaniTech</span>
+        &nbsp;·&nbsp;
+        <a href="mailto:facincanitech@gmail.com" style="color:var(--cinza);text-decoration:none">facincanitech@gmail.com</a>
+      </div>
+    </div>
+    <div class="footer">
+      ⚠️ Conteúdo exclusivamente informativo e educacional.<br>
+      Não substitui orientação médica ou jurídica profissional.
+    </div>
+  </div>
+
+  <!-- ── CONTENT ──────────────────────────────────────────────────────────── -->
+  <div id="screen-content" class="screen">
+    <div class="header">
+      <button class="btn-back" onclick="goHome()">← Voltar</button>
+      <span id="content-icon" class="header-icon"></span>
+      <span id="content-title" class="header-title"></span>
+    </div>
+    <div id="content-scroll" class="scroll-area"></div>
+    <div class="footer">
+      ⚠️ Conteúdo exclusivamente informativo e educacional.<br>
+      Não substitui orientação médica ou jurídica profissional.
+    </div>
+  </div>
+
+  <!-- ── QUIZ ─────────────────────────────────────────────────────────────── -->
+  <div id="screen-quiz" class="screen">
+    <div class="header">
+      <button class="btn-back" onclick="goHome()">← Voltar</button>
+      <span class="header-icon">🎯</span>
+      <span class="header-title">Quiz de Direcionamento</span>
+    </div>
+    <div class="progress-bar-track">
+      <div id="quiz-progress" class="progress-bar-fill" style="width:0%"></div>
+    </div>
+    <div id="quiz-scroll" class="scroll-area"></div>
+    <div class="footer">
+      ⚠️ Conteúdo exclusivamente informativo e educacional.<br>
+      Não substitui orientação médica ou jurídica profissional.
+    </div>
+  </div>
+
+</div>
+
+<script src="content.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

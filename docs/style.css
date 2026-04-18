@@ -1,0 +1,343 @@
+/* style.css — CannaGuia dark cannabis theme */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:         #121212;
+  --bg-card:    #1E1E1E;
+  --bg-card2:   #252525;
+  --verde-esc:  #1B5E20;
+  --verde-pri:  #2E7D32;
+  --verde-cla:  #4CAF50;
+  --verde-hov:  #388E3C;
+  --texto:      #F0F0F0;
+  --cinza:      #9E9E9E;
+  --aviso-bg:   #4D2E05;
+  --radius:     10px;
+  --max-w:      480px;
+}
+
+html { font-size: 16px; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--texto);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ── App shell ──────────────────────────────────────────────────────────────── */
+#app {
+  width: 100%;
+  max-width: var(--max-w);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ── Screens ────────────────────────────────────────────────────────────────── */
+.screen {
+  display: none;
+  flex-direction: column;
+  flex: 1;
+  min-height: 100vh;
+}
+.screen.active { display: flex; }
+
+/* ── Header ─────────────────────────────────────────────────────────────────── */
+.header {
+  background: var(--verde-esc);
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  height: 58px;
+  flex-shrink: 0;
+  gap: 10px;
+}
+
+.btn-back {
+  background: none;
+  border: none;
+  color: var(--texto);
+  font-size: 14px;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.btn-back:hover { background: rgba(255,255,255,.1); }
+
+.header-icon { font-size: 22px; flex-shrink: 0; }
+
+.header-title {
+  font-size: 17px;
+  font-weight: 700;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ── Progress bar (quiz) ────────────────────────────────────────────────────── */
+.progress-bar-track {
+  height: 6px;
+  background: #262626;
+  flex-shrink: 0;
+}
+.progress-bar-fill {
+  height: 100%;
+  background: var(--verde-cla);
+  transition: width .3s ease;
+}
+
+/* ── Scroll area ────────────────────────────────────────────────────────────── */
+.scroll-area {
+  flex: 1;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 14px 14px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ── Footer ─────────────────────────────────────────────────────────────────── */
+.footer {
+  background: #171717;
+  padding: 10px 16px;
+  text-align: center;
+  font-size: 11px;
+  color: var(--cinza);
+  line-height: 1.5;
+  flex-shrink: 0;
+}
+
+/* ── HOME screen ────────────────────────────────────────────────────────────── */
+#screen-home .scroll-area { padding-top: 20px; }
+
+.home-logo-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 6px 4px 14px;
+}
+.home-logo { width: 72px; height: 72px; object-fit: contain; }
+
+.home-title { font-size: 20px; font-weight: 700; color: var(--verde-cla); }
+.home-sub   { font-size: 13px; color: var(--cinza); margin-top: 2px; }
+
+/* Search */
+.search-wrap {
+  position: relative;
+  margin-bottom: 4px;
+}
+.search-input {
+  width: 100%;
+  background: var(--bg-card);
+  border: 1px solid #333;
+  border-radius: var(--radius);
+  color: var(--texto);
+  font-size: 14px;
+  padding: 10px 14px 10px 38px;
+  outline: none;
+  transition: border-color .2s;
+}
+.search-input:focus { border-color: var(--verde-cla); }
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  color: var(--cinza);
+}
+
+#search-results { display: none; flex-direction: column; gap: 8px; }
+#search-results.visible { display: flex; }
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.menu-btn {
+  background: var(--bg-card);
+  border: none;
+  border-radius: var(--radius);
+  color: var(--texto);
+  cursor: pointer;
+  padding: 16px 12px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: background .15s;
+}
+.menu-btn:hover, .menu-btn:active { background: var(--verde-hov); }
+.menu-btn .m-icon  { font-size: 26px; }
+.menu-btn .m-label { font-size: 14px; font-weight: 600; }
+.menu-btn .m-sub   { font-size: 11px; color: var(--cinza); line-height: 1.3; }
+
+/* Search result cards */
+.search-card {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  cursor: pointer;
+  border-left: 3px solid var(--verde-cla);
+  transition: background .15s;
+}
+.search-card:hover { background: var(--bg-card2); }
+.search-card .sc-section { font-size: 11px; color: var(--verde-cla); margin-bottom: 3px; }
+.search-card .sc-title   { font-size: 14px; font-weight: 600; margin-bottom: 4px; }
+.search-card .sc-snippet { font-size: 12px; color: var(--cinza); line-height: 1.4; }
+
+/* Home footer credit */
+.home-credit {
+  text-align: center;
+  padding: 12px 0 4px;
+  font-size: 12px;
+  color: var(--cinza);
+}
+.home-credit span { color: var(--verde-cla); }
+
+/* ── CONTENT screen ─────────────────────────────────────────────────────────── */
+.aviso-extra {
+  background: var(--aviso-bg);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--texto);
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 0 2px;
+}
+.section-title .st-emoji { font-size: 18px; flex-shrink: 0; }
+.section-title .st-text  { font-size: 17px; font-weight: 700; color: var(--verde-cla); }
+
+.card {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.card .card-sub  { font-size: 15px; font-weight: 700; color: var(--verde-cla); line-height: 1.4; }
+.card .card-body { font-size: 14px; line-height: 1.6; color: var(--texto); }
+.card .card-body b { color: #e0e0e0; }
+
+/* ── QUIZ screen ────────────────────────────────────────────────────────────── */
+.quiz-prog-label {
+  font-size: 13px;
+  color: var(--verde-cla);
+  text-align: right;
+  padding: 2px 0;
+}
+.quiz-question {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--texto);
+  padding: 4px 0 6px;
+}
+.quiz-option {
+  background: var(--bg-card);
+  border: none;
+  border-radius: var(--radius);
+  color: var(--texto);
+  font-size: 14px;
+  text-align: left;
+  padding: 14px 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: background .15s;
+  line-height: 1.4;
+}
+.quiz-option:hover, .quiz-option:active { background: var(--verde-hov); }
+
+.quiz-btn-prev {
+  background: none;
+  border: none;
+  color: var(--cinza);
+  font-size: 13px;
+  cursor: pointer;
+  padding: 8px 0;
+  text-align: left;
+}
+.quiz-btn-prev:hover { color: var(--texto); }
+
+/* Result cards */
+.result-title {
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--verde-cla);
+  padding: 4px 0 6px;
+}
+.result-card {
+  background: var(--bg-card2);
+  border-radius: 12px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.result-card .rc-head {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--verde-cla);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.result-card .rc-body { font-size: 13px; color: var(--texto); line-height: 1.6; }
+.result-card .rc-body b { color: #e0e0e0; }
+
+.alerta-card {
+  background: var(--aviso-bg);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  font-size: 13px;
+  color: #FF9800;
+  line-height: 1.5;
+}
+
+.disclaimer {
+  font-size: 12px;
+  color: var(--cinza);
+  line-height: 1.5;
+  padding: 4px 0;
+}
+
+.btn-refazer {
+  background: var(--verde-pri);
+  border: none;
+  border-radius: var(--radius);
+  color: var(--texto);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 14px;
+  width: 100%;
+  margin-top: 4px;
+  transition: background .15s;
+}
+.btn-refazer:hover { background: var(--verde-hov); }
+
+/* ── Scrollbar styling ──────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
