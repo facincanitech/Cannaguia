@@ -17,9 +17,9 @@ CULTIVO = {
                  'armazenamento e transporte.'),
                 ('Tipos de Sementes',
                  '[b]Regulares:[/b] Produzem machos e fêmeas (50/50). Usadas para cruzamentos.\n\n'
-                 '[b]Feminizadas:[/b] Geneticamente modificadas para produzir quase 100% fêmeas. '
+                 '[b]Feminizadas (fem.):[/b] Geneticamente modificadas para produzir quase 100% fêmeas. '
                  'Ideal para cultivo medicinal, apenas fêmeas produzem flores ricas em canabinoides.\n\n'
-                 '[b]Autoflorescentes:[/b] Florescem por idade (geralmente 70–90 dias), '
+                 '[b]Autoflorescentes (auto.):[/b] Florescem por idade (geralmente 70–90 dias), '
                  'independentemente do fotoperíodo. Ótimas para iniciantes.'),
                 ('Clones e Vantagens',
                  'Cópia genética exata da planta-mãe, sexo garantido, uniformidade '
@@ -81,13 +81,14 @@ CULTIVO = {
                  'A planta cresce em altura e desenvolve estrutura. '
                  'Fotoperíodo: 18h luz / 6h escuro. '
                  'Nutrição: [b]Nitrogênio (N)[/b] alto para crescimento foliar. '
-                 'Técnicas: LST (Low Stress Training), topping, SCROG para controle de altura '
-                 'e aumento de produção.'),
+                 'Técnicas: LST (Low Stress Training (treinamento de baixo stress)), '
+                 'topping (corte do topo), SCROG (Screen of Green (tela verde)), ' 
+                 'para controle de altura e aumento de produção.'),
                 ('Floração (8–12 semanas)',
                  'Induzida reduzindo luz para 12h/dia (exceto autoflorescentes). '
                  'Surgem os cálices, pistilos e tricomas. '
                  'Nutrição: reduzir N, aumentar [b]Fósforo (P)[/b] e [b]Potássio (K)[/b]. '
-                 'Semana 6–8: flush final com água pura para eliminar resíduos de nutrientes.'),
+                 'Semana 6–8: flush (lavagem) final com água pura para eliminar resíduos de nutrientes.'),
             ]
         },
         {
@@ -247,7 +248,7 @@ VARIEDADES = {
                  'vendidos em farmácias e associações no Brasil.\n\n'
                  '[b]Cultivares conhecidas:[/b] Charlotte\'s Web, Elektra, Sour Space Candy, '
                  'Special Sauce, Hawaiian Haze'),
-                ('Diferença Hemp vs Cannabis "Comum"',
+                ('Diferença Hemp vs Cannabis comuns',
                  '[b]Hemp:[/b] Sativa, alta, fibra longa, THC <0,3%, CBD alto\n'
                  '[b]Cannabis medicinal/recreativa:[/b] THC variável (5–30%+), '
                  'selecionada para flores com tricomas\n\n'
