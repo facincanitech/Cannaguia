@@ -253,5 +253,6 @@ function updateProgressBar(passo) {
 // ── INIT ──────────────────────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
   buildHome();
-  showScreen('home');
+  history.replaceState({ screen: 'home' }, '', '#home');
+  showScreen('home', false);
 });
