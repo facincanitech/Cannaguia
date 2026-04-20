@@ -1,4 +1,4 @@
-# content.py — Todo o conteúdo estático informativo do CannaGuia
+# content.py, Todo o conteúdo estático informativo do CannaGuia
 # Estruturado como dicionários para facilitar renderização dinâmica
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -7,26 +7,21 @@
 CULTIVO = {
     'titulo': 'Guia de Cultivo',
     'icone': '🌱',
-    'aviso_extra': (
-        "[color=#FF9800][b]⚠ ATENÇÃO:[/b][/color] No Brasil, o cultivo de cannabis "
-        "é proibido sem autorização expressa da Anvisa (Lei 11.343/2006). "
-        "Este conteúdo é exclusivamente educacional."
-    ),
     'secoes': [
         {
             'titulo': '🌰 Sementes vs Clones',
             'itens': [
-                ('Sementes — Vantagens',
+                ('Sementes, Vantagens',
                  'Maior diversidade genética, sem risco de transmissão de pragas e '
                  'doenças via material vegetativo, vigor híbrido em F1, facilidade de '
                  'armazenamento e transporte.'),
                 ('Tipos de Sementes',
                  '[b]Regulares:[/b] Produzem machos e fêmeas (50/50). Usadas para cruzamentos.\n\n'
                  '[b]Feminizadas:[/b] Geneticamente modificadas para produzir quase 100% fêmeas. '
-                 'Ideal para cultivo medicinal — apenas fêmeas produzem flores ricas em canabinoides.\n\n'
+                 'Ideal para cultivo medicinal, apenas fêmeas produzem flores ricas em canabinoides.\n\n'
                  '[b]Autoflorescentes:[/b] Florescem por idade (geralmente 70–90 dias), '
                  'independentemente do fotoperíodo. Ótimas para iniciantes.'),
-                ('Clones — Vantagens',
+                ('Clones, Vantagens',
                  'Cópia genética exata da planta-mãe, sexo garantido, uniformidade '
                  'na produção, início mais rápido sem fase de germinação. '
                  'Risco: podem transmitir pragas e doenças da planta-mãe.'),
@@ -43,26 +38,26 @@ CULTIVO = {
                  '"uso exclusivo para coleção". O comprador assume os riscos legais.\n\n'
                  '[b]Importante:[/b] Adquirir sementes sem o habeas corpus preventivo '
                  'não oferece proteção jurídica. Consulte a seção [b]Lei de Cultivo[/b] antes.'),
-                ('Bancos de Sementes — Internacionais',
-                 '[b]Seedsman (UK)[/b] — grande variedade, envio discreto, preços acessíveis\n'
-                 '[b]ILGM — I Love Growing Marijuana[/b] — garantia de germinação, suporte\n'
-                 '[b]Barney\'s Farm (NL)[/b] — genéticas premium, múltiplos Cannabis Cup\n'
-                 '[b]Royal Queen Seeds (ESP)[/b] — muito popular, boa relação custo-benefício\n'
-                 '[b]Dinafem (ESP)[/b] — especialista em feminizadas e medicinais CBD\n\n'
+                ('Bancos de Sementes, Internacionais',
+                 '[b]Seedsman (UK)[/b], grande variedade, envio discreto, preços acessíveis\n'
+                 '[b]ILGM, I Love Growing Marijuana[/b], garantia de germinação, suporte\n'
+                 '[b]Barney\'s Farm (NL)[/b], genéticas premium, múltiplos Cannabis Cup\n'
+                 '[b]Royal Queen Seeds (ESP)[/b], muito popular, boa relação custo-benefício\n'
+                 '[b]Dinafem (ESP)[/b], especialista em feminizadas e medicinais CBD\n\n'
                  '[i]Fique atento à alfândega: sementes podem ser retidas. '
                  'Bancos confiáveis reenviam em caso de apreensão.[/i]'),
-                ('Bancos de Sementes — Nacionais',
-                 '[b]Brazilian Seed Bank[/b] — genéticas nacionais e importadas\n'
-                 '[b]Grow Shop Brasil[/b] — lojas em SP e online\n'
-                 '[b]Lojas em São Paulo[/b] — concentração no centro e Vila Madalena\n'
-                 '[b]Rio de Janeiro[/b] — Ipanema, Lapa e grow shops da região\n\n'
+                ('Bancos de Sementes, Nacionais',
+                 '[b]Brazilian Seed Bank[/b], genéticas nacionais e importadas\n'
+                 '[b]Grow Shop Brasil[/b], lojas em SP e online\n'
+                 '[b]Lojas em São Paulo[/b], concentração no centro e Vila Madalena\n'
+                 '[b]Rio de Janeiro[/b], Ipanema, Lapa e grow shops da região\n\n'
                  'Vantagens do nacional: sem risco alfandegário, pagamento em real, '
                  'entrega mais rápida. Desvantagem: variedade menor.\n\n'
                  '[i]Pesquise reviews em fóruns como Canna.com.br antes de comprar.[/i]'),
                 ('Como Escolher uma Boa Semente',
                  '[b]Cor e firmeza:[/b] Sementes maduras são marrons/cinza com '
                  'listras tigradas, duras ao apertar. Sementes verdes ou muito claras '
-                 'são imaturas — baixa taxa de germinação.\n\n'
+                 'são imaturas, baixa taxa de germinação.\n\n'
                  '[b]COA / Ficha técnica:[/b] Bancos sérios informam '
                  'THC estimado, CBD, tempo de floração e tipo (regular/fem/auto).\n\n'
                  '[b]Desconfie de:[/b] Preços muito abaixo do mercado, sem ficha '
@@ -98,13 +93,13 @@ CULTIVO = {
         {
             'titulo': '✂️ Colheita',
             'itens': [
-                ('Quando Colher — Tricomas',
+                ('Quando Colher, Tricomas',
                  'O método mais preciso usa lupa 60–100x ou microscópio para observar tricomas:\n\n'
-                 '[b]Transparentes/Cristalinos:[/b] Muito cedo — THC ainda se formando.\n'
-                 '[b]Leitosos/Opacos:[/b] THC máximo — efeito mais cerebral e energético.\n'
-                 '[b]Âmbar (20–30%):[/b] THC convertendo em CBN — efeito mais sedativo e corporal.\n\n'
+                 '[b]Transparentes/Cristalinos:[/b] Muito cedo, THC ainda se formando.\n'
+                 '[b]Leitosos/Opacos:[/b] THC máximo, efeito mais cerebral e energético.\n'
+                 '[b]Âmbar (20–30%):[/b] THC convertendo em CBN, efeito mais sedativo e corporal.\n\n'
                  'Para uso medicinal: geralmente 70–80% leitosos + 10–20% âmbar.'),
-                ('Quando Colher — Pistilos',
+                ('Quando Colher, Pistilos',
                  'Método visual sem equipamento:\n'
                  '[b]50–70% escuros/curvados:[/b] Colheita precoce.\n'
                  '[b]70–90% escuros/curvados:[/b] Maturação ideal.\n'
@@ -126,7 +121,7 @@ CULTIVO = {
                  'potencializa efeitos e prolonga a conservação do material. '
                  'Flores curadas podem durar 1–2 anos sem perda significativa.'),
                 ('Como Curar',
-                 '1. Colocar flores em potes de vidro herméticos (Mason jars) — '
+                 '1. Colocar flores em potes de vidro herméticos (Mason jars), '
                  '75% cheios para deixar ar circular.\n'
                  '2. Primeiros 7–14 dias: abrir os potes 1–2x/dia por 15–30 min '
                  '(processo chamado "burping") para liberar gases.\n'
@@ -135,11 +130,11 @@ CULTIVO = {
                  '4. Cura mínima: 2–3 semanas. Ideal: 4–8 semanas. '
                  'Premium: 3–6 meses.'),
                 ('Sinais de Problemas',
-                 '[b]Mofo (Botrytis):[/b] Manchas cinza/brancas, odor de bafio — '
+                 '[b]Mofo (Botrytis):[/b] Manchas cinza/brancas, odor de bafio, '
                  'descartar material afetado imediatamente.\n'
-                 '[b]Muito seco:[/b] Tricomas se quebram, fumaça áspera — '
+                 '[b]Muito seco:[/b] Tricomas se quebram, fumaça áspera, '
                  'adicionar casca de laranja por 1 hora.\n'
-                 '[b]Muito úmido:[/b] Flores pegajosas em excesso — '
+                 '[b]Muito úmido:[/b] Flores pegajosas em excesso, '
                  'deixar tampa aberta por mais tempo.'),
             ]
         },
@@ -161,21 +156,21 @@ LEI_CULTIVO = {
         {
             'titulo': '📋 O Que Diz a Lei',
             'itens': [
-                ('Lei 11.343/2006 — Lei de Drogas',
+                ('Lei 11.343/2006, Lei de Drogas',
                  'A Lei de Drogas proíbe o cultivo de cannabis sem autorização '
                  'expressa da Anvisa. Não há distinção legal explícita entre '
-                 'cultivo para uso próprio e tráfico — a diferença fica a critério '
+                 'cultivo para uso próprio e tráfico, a diferença fica a critério '
                  'do juiz com base em quantidade, local e circunstâncias.\n\n'
                  'A Anvisa pode autorizar cultivo apenas para [b]pesquisa científica[/b] '
-                 'ou [b]fabricação industrial[/b] de produtos registrados — '
+                 'ou [b]fabricação industrial[/b] de produtos registrados, '
                  'não para pacientes individuais.'),
                 ('Decisões do STJ e STF',
                  'O [b]STJ e STF[/b] têm concedido habeas corpus a pacientes '
                  'que cultivam para uso medicinal próprio, com base em:\n\n'
-                 '• Art. 196 CF — Direito à saúde\n'
-                 '• Art. 1º CF — Dignidade da pessoa humana\n'
+                 '• Art. 196 CF, Direito à saúde\n'
+                 '• Art. 1º CF, Dignidade da pessoa humana\n'
                  '• Princípio da proporcionalidade\n\n'
-                 'Isso não legaliza o cultivo — oferece proteção judicial '
+                 'Isso não legaliza o cultivo, oferece proteção judicial '
                  'individual caso a caso. Cada processo é analisado separadamente.'),
             ]
         },
@@ -200,7 +195,7 @@ LEI_CULTIVO = {
                  'que impede autoridades de prender ou processar o paciente '
                  'pelo cultivo descrito na decisão.\n\n'
                  '[b]Onde impetrar:[/b] TJ (Tribunal de Justiça) do seu estado\n'
-                 '[b]Tempo médio:[/b] Semanas a meses — varia por estado\n'
+                 '[b]Tempo médio:[/b] Semanas a meses, varia por estado\n'
                  '[b]Custo:[/b] Honorários do advogado (Defensoria Pública é gratuita)'),
                 ('Documentos Necessários',
                  '• [b]Laudo médico[/b] detalhado com diagnóstico e justificativa\n'
@@ -215,13 +210,13 @@ LEI_CULTIVO = {
             'titulo': '👨‍⚖️ Apoio Jurídico',
             'itens': [
                 ('Onde Encontrar Advogados Especializados',
-                 '• [b]OAB Cannabis[/b] — Comissão especial da OAB\n'
-                 '• [b]ABRACANNABIS[/b] — Lista de advogados parceiros por estado\n'
-                 '• [b]APEPI / ABRACE / Flor da Vida[/b] — Suporte jurídico a associados\n'
-                 '• [b]Instituto Igarapé[/b] — Advocacy em política de drogas\n'
+                 '• [b]OAB Cannabis[/b], Comissão especial da OAB\n'
+                 '• [b]ABRACANNABIS[/b], Lista de advogados parceiros por estado\n'
+                 '• [b]APEPI / ABRACE / Flor da Vida[/b], Suporte jurídico a associados\n'
+                 '• [b]Instituto Igarapé[/b], Advocacy em política de drogas\n'
                  '• Grupos de pacientes no Telegram/Facebook por estado\n\n'
                  '[i]Verifique sempre a especialização em cannabis/saúde antes de contratar.[/i]'),
-                ('Defensoria Pública — Atendimento Gratuito',
+                ('Defensoria Pública, Atendimento Gratuito',
                  'Pacientes de baixa renda têm direito a atendimento gratuito '
                  'pela Defensoria Pública do estado.\n\n'
                  '• Presente em capitais e muitas cidades do interior\n'
@@ -241,12 +236,12 @@ VARIEDADES = {
     'icone': '🌿',
     'secoes': [
         {
-            'titulo': '🌿 Hemp — Cânhamo Industrial',
+            'titulo': '🌿 Hemp, Cânhamo Industrial',
             'itens': [
                 ('O que é o Hemp',
                  '[b]Espécie:[/b] Cannabis sativa L. (baixo THC)\n'
                  '[b]THC:[/b] <0,3% (legal internacionalmente)\n'
-                 '[b]CBD:[/b] Alto — principal fonte comercial de CBD\n\n'
+                 '[b]CBD:[/b] Alto, principal fonte comercial de CBD\n\n'
                  'O hemp é cultivado para fibra, óleo de semente, CBD e uso industrial. '
                  'Não produz efeito psicoativo. É a base da maioria dos produtos CBD '
                  'vendidos em farmácias e associações no Brasil.\n\n'
@@ -256,7 +251,7 @@ VARIEDADES = {
                  '[b]Hemp:[/b] Sativa, alta, fibra longa, THC <0,3%, CBD alto\n'
                  '[b]Cannabis medicinal/recreativa:[/b] THC variável (5–30%+), '
                  'selecionada para flores com tricomas\n\n'
-                 'Geneticamente são a mesma espécie — a diferença está na seleção '
+                 'Geneticamente são a mesma espécie, a diferença está na seleção '
                  'ao longo de gerações para perfis opostos de canabinoides.'),
             ]
         },
@@ -271,7 +266,7 @@ VARIEDADES = {
                  '[b]Aroma:[/b] Terra, sândalo, pinho suave\n'
                  '[b]Efeitos:[/b] Relaxamento profundo, sedação, analgesia corporal\n'
                  '[b]Uso médico:[/b] Dor crônica, insônia, espasmos musculares\n'
-                 '[b]Perfil:[/b] Landrace clássica — base genética de centenas de indica modernas'),
+                 '[b]Perfil:[/b] Landrace clássica, base genética de centenas de indica modernas'),
                 ('OG Kush',
                  '[b]Origem:[/b] Florida/California, anos 90 (cruzamento não totalmente documentado)\n'
                  '[b]Tipo:[/b] Híbrida indica-dominante\n'
@@ -280,7 +275,7 @@ VARIEDADES = {
                  '[b]Aroma:[/b] Limão, pinho, combustível/diesel\n'
                  '[b]Efeitos:[/b] Euforia inicial, relaxamento profundo, fome intensa\n'
                  '[b]Uso médico:[/b] Dor, estresse, depressão, insônia\n'
-                 '[b]Perfil:[/b] Uma das mais influentes do mundo — gerou Bubba Kush, '
+                 '[b]Perfil:[/b] Uma das mais influentes do mundo, gerou Bubba Kush, '
                  'GSC, Gelato e dezenas de outras'),
                 ('Bubba Kush',
                  '[b]Origem:[/b] California (cruzamento OG Kush x landrace afgã)\n'
@@ -318,7 +313,7 @@ VARIEDADES = {
                  '[b]THC:[/b] 20–25%\n'
                  '[b]Terpenos:[/b] Terpinoleno, mirceno, ocimeno\n'
                  '[b]Aroma:[/b] Limão intenso, terra, especiarias\n'
-                 '[b]Efeitos:[/b] Euforia cerebral, foco criativo, energia — '
+                 '[b]Efeitos:[/b] Euforia cerebral, foco criativo, energia, '
                  'pode causar desorientação em doses altas (daí o nome)\n'
                  '[b]Uso médico:[/b] Depressão, fadiga, déficit de foco'),
                 ('Super Silver Haze',
@@ -346,9 +341,9 @@ VARIEDADES = {
                  '[b]Tipo:[/b] Híbrida equilibrada (Afghani x Acapulco Gold x Colombian Gold)\n'
                  '[b]THC:[/b] 15–19%\n'
                  '[b]Terpenos:[/b] Mirceno, cariofileno, limoneno\n'
-                 '[b]Aroma:[/b] Forte, penetrante, terra + cítrico — aroma "skunk" clássico\n'
+                 '[b]Aroma:[/b] Forte, penetrante, terra + cítrico, aroma "skunk" clássico\n'
                  '[b]Efeitos:[/b] Equilibrado corpo-mente, eufórico, relaxante\n'
-                 '[b]Legado:[/b] Uma das cultivares mais influentes da história — '
+                 '[b]Legado:[/b] Uma das cultivares mais influentes da história, '
                  'base genética de centenas de híbridas europeias e americanas'),
                 ('Super Skunk',
                  '[b]Tipo:[/b] Indica dominante (Skunk #1 x Afghani)\n'
@@ -377,7 +372,7 @@ VARIEDADES = {
                  '[b]Tipo:[/b] Híbrida equilibrada a levemente indica\n'
                  '[b]THC:[/b] 20–25%\n'
                  '[b]Terpenos:[/b] Cariofileno, limoneno, mirceno\n'
-                 '[b]Aroma:[/b] Doce cremoso, frutas, lavanda — como sorvete\n'
+                 '[b]Aroma:[/b] Doce cremoso, frutas, lavanda, como sorvete\n'
                  '[b]Efeitos:[/b] Euforia rápida e intensa, relaxamento sem sedação total\n'
                  '[b]Uso médico:[/b] Dor muscular, estresse, depressão'),
                 ('Blue Dream',
@@ -387,7 +382,7 @@ VARIEDADES = {
                  '[b]Terpenos:[/b] Mirceno, cariofileno, pineno\n'
                  '[b]Aroma:[/b] Mirtilo/blueberry, frutal, doce\n'
                  '[b]Efeitos:[/b] Euforia cerebral suave, motivação, relaxamento sem sedação\n'
-                 '[b]Uso médico:[/b] Depressão, fadiga, dor leve — ótima para uso diurno\n'
+                 '[b]Uso médico:[/b] Depressão, fadiga, dor leve, ótima para uso diurno\n'
                  '[b]Perfil:[/b] Uma das mais consumidas nos EUA pela versatilidade'),
                 ('White Widow',
                  '[b]Origem:[/b] Holanda, anos 90 (Brazilian Sativa x South Indian Indica)\n'
@@ -395,7 +390,7 @@ VARIEDADES = {
                  '[b]THC:[/b] 18–25%\n'
                  '[b]Terpenos:[/b] Mirceno, cariofileno, pineno\n'
                  '[b]Aroma:[/b] Pinho, terra, amadeirado\n'
-                 '[b]Visual:[/b] Flores cobertas de tricomas brancos — daí o nome\n'
+                 '[b]Visual:[/b] Flores cobertas de tricomas brancos, daí o nome\n'
                  '[b]Efeitos:[/b] Energizante, conversação, euforia cerebral + relaxamento leve\n'
                  '[b]Uso médico:[/b] Depressão, fadiga, dor leve, estresse'),
                 ('Gorilla Glue #4 (GG4)',
@@ -406,7 +401,7 @@ VARIEDADES = {
                  '[b]Aroma:[/b] Diesel, terra, café, pinho\n'
                  '[b]Efeitos:[/b] Sedação intensa, "colado no sofá" (daí o nome), '
                  'euforia inicial, analgesia potente\n'
-                 '[b]Uso médico:[/b] Dor severa, insônia, TEPT — [b]não recomendada para iniciantes[/b]'),
+                 '[b]Uso médico:[/b] Dor severa, insônia, TEPT, [b]não recomendada para iniciantes[/b]'),
                 ('Wedding Cake (Pink Cookies)',
                  '[b]Tipo:[/b] Indica dominante (Triangle Kush x Animal Mints)\n'
                  '[b]THC:[/b] 22–27%\n'
@@ -420,12 +415,12 @@ VARIEDADES = {
             'titulo': '🌴 Sativas Tropicais & Landrace',
             'itens': [
                 ('Durban Poison',
-                 '[b]Origem:[/b] Durban, África do Sul — landrace pura\n'
+                 '[b]Origem:[/b] Durban, África do Sul, landrace pura\n'
                  '[b]Tipo:[/b] Sativa pura\n'
                  '[b]THC:[/b] 18–26%\n'
                  '[b]Terpenos:[/b] Terpinoleno, ocimeno, mirceno\n'
                  '[b]Aroma:[/b] Anis, alcaçuz, doce, terra\n'
-                 '[b]Efeitos:[/b] Energizante extremo, foco intenso, produtividade — '
+                 '[b]Efeitos:[/b] Energizante extremo, foco intenso, produtividade, '
                  '"o espresso da cannabis"\n'
                  '[b]Uso médico:[/b] Depressão, TDAH, fadiga, náusea\n'
                  '[b]Perfil:[/b] Genética base para GSC, Cookies e muitas híbridas modernas'),
@@ -439,11 +434,11 @@ VARIEDADES = {
                  '[b]Uso médico:[/b] Depressão, TDAH, fadiga, náusea matinal\n'
                  '[b]Homenagem:[/b] Ao ativista cannábico Jack Herer (1939–2010)'),
                 ('Manga Rosa (Brazilian)',
-                 '[b]Origem:[/b] Brasil — cultivar nacional muito popular\n'
+                 '[b]Origem:[/b] Brasil, cultivo nacional muito popular\n'
                  '[b]Tipo:[/b] Híbrida sativa-dominante\n'
                  '[b]THC:[/b] 16–22%\n'
                  '[b]Terpenos:[/b] Mirceno dominante, limoneno\n'
-                 '[b]Aroma:[/b] Manga tropical intensa, doce, frutado — '
+                 '[b]Aroma:[/b] Manga tropical intensa, doce, frutado, '
                  'muito reconhecível e valorizado\n'
                  '[b]Efeitos:[/b] Euforia, alegria, relaxamento suave, sociável\n'
                  '[b]Uso médico:[/b] Depressão, estresse, inapetência\n'
@@ -483,13 +478,13 @@ VARIEDADES = {
                  '[b]Tipo:[/b] Indica dominante\n'
                  '[b]THC:[/b] 17–20%\n'
                  '[b]Terpenos:[/b] Mirceno, linalol, cariofileno\n'
-                 '[b]Aroma:[/b] Mirtilo fresco, doce, floral — muito característico\n'
+                 '[b]Aroma:[/b] Mirtilo fresco, doce, floral, muito característico\n'
                  '[b]Cor:[/b] Pode desenvolver tons azuis/roxos no frio\n'
                  '[b]Efeitos:[/b] Relaxante, felicidade, sedação gradual\n'
                  '[b]Uso médico:[/b] Insônia, dor, estresse\n'
                  '[b]Legado:[/b] Genitor do Blue Dream e muitas "Blue" strains'),
                 ('Afghan Kush',
-                 '[b]Origem:[/b] Afeganistão — landrace pura\n'
+                 '[b]Origem:[/b] Afeganistão, landrace pura\n'
                  '[b]Tipo:[/b] Indica pura\n'
                  '[b]THC:[/b] 15–20% | [b]Resina:[/b] Altíssima (base para haxixe)\n'
                  '[b]Terpenos:[/b] Mirceno, cariofileno, humuleno\n'
@@ -503,21 +498,21 @@ VARIEDADES = {
             'itens': [
                 ("Charlotte's Web",
                  '[b]Origem:[/b] Colorado (Stanley Brothers, 2011)\n'
-                 '[b]Tipo:[/b] Hemp — sativa\n'
+                 '[b]Tipo:[/b] Hemp, sativa\n'
                  '[b]CBD:[/b] 13–20% | [b]THC:[/b] <0,3%\n'
                  '[b]Terpenos:[/b] Mirceno, cariofileno, terpinoleno\n'
                  '[b]Aroma:[/b] Floral, terra, pinho suave\n'
-                 '[b]Efeitos:[/b] Sem psicoativo — anti-inflamatório, ansiolítico, '
+                 '[b]Efeitos:[/b] Sem psicoativo, anti-inflamatório, ansiolítico, '
                  'anticonvulsivante\n'
                  '[b]História:[/b] Desenvolvida para Charlotte Figi, criança com '
-                 'síndrome de Dravet — ficou famosa por reduzir convulsões de 300/sem para ~3/mês\n'
+                 'síndrome de Dravet, ficou famosa por reduzir convulsões de 300/sem para ~3/mês\n'
                  '[b]No Brasil:[/b] Disponível via importação Anvisa'),
                 ('ACDC',
                  '[b]Tipo:[/b] Híbrida CBD (Cannatonic x Ruderalis)\n'
                  '[b]CBD:[/b] 14–20% | [b]THC:[/b] <1% | [b]Ratio:[/b] ~20:1 CBD:THC\n'
                  '[b]Terpenos:[/b] Mirceno, cariofileno, pineno\n'
                  '[b]Aroma:[/b] Terra, pinho, frutal suave\n'
-                 '[b]Efeitos:[/b] Sem psicoativo — analgesia, ansiolítico, anti-inflamatório\n'
+                 '[b]Efeitos:[/b] Sem psicoativo, analgesia, ansiolítico, anti-inflamatório\n'
                  '[b]Uso médico:[/b] Dor neuropática, esclerose múltipla, epilepsia, ansiedade'),
                 ('Cannatonic',
                  '[b]Tipo:[/b] Híbrida equilibrada (MK Ultra x G13 Haze)\n'
@@ -525,14 +520,14 @@ VARIEDADES = {
                  '[b]Terpenos:[/b] Mirceno, cariofileno, pineno\n'
                  '[b]Aroma:[/b] Cítrico, terra, pinho\n'
                  '[b]Efeitos:[/b] Relaxamento sem sedação, clareza mental, analgesia suave\n'
-                 '[b]Uso médico:[/b] Dor, ansiedade, espasmos — versatilidade para uso diurno'),
+                 '[b]Uso médico:[/b] Dor, ansiedade, espasmos, versatilidade para uso diurno'),
                 ('Harlequin',
                  '[b]Tipo:[/b] Sativa dominante CBD (Colombia x Nepal x Thailand x Switzerland)\n'
                  '[b]CBD:[/b] 8–16% | [b]THC:[/b] 4–7% | [b]Ratio:[/b] ~5:2 CBD:THC\n'
                  '[b]Terpenos:[/b] Mirceno, cariofileno, pineno\n'
                  '[b]Aroma:[/b] Manga, musk, terra\n'
                  '[b]Efeitos:[/b] Alerta, foco, analgesia sem intoxicação\n'
-                 '[b]Uso médico:[/b] Dor, inflamação, ansiedade — ideal para uso diurno'),
+                 '[b]Uso médico:[/b] Dor, inflamação, ansiedade, ideal para uso diurno'),
             ]
         },
         {
@@ -543,7 +538,7 @@ VARIEDADES = {
                  '[b]Tipo:[/b] Híbrida equilibrada\n'
                  '[b]THC:[/b] 19–29%\n'
                  '[b]Terpenos:[/b] Cariofileno, limoneno, linalol\n'
-                 '[b]Aroma:[/b] Balas de fruta, doce, cremoso — muito distinto\n'
+                 '[b]Aroma:[/b] Balas de fruta, doce, cremoso, muito distinto\n'
                  '[b]Efeitos:[/b] Euforia intensa e duradoura, relaxamento corporal, fome\n'
                  '[b]Visual:[/b] Flores multicoloridas (verde, roxo, laranja)\n'
                  '[b]Perfil:[/b] Uma das mais hypeadas dos últimos anos nos EUA'),
@@ -552,7 +547,7 @@ VARIEDADES = {
                  '[b]Tipo:[/b] Indica dominante\n'
                  '[b]THC:[/b] 15–23%\n'
                  '[b]Terpenos:[/b] Cariofileno, linalol, humuleno\n'
-                 '[b]Aroma:[/b] Frutas tropicais, uva, balas — muito adocicado\n'
+                 '[b]Aroma:[/b] Frutas tropicais, uva, balas, muito adocicado\n'
                  '[b]Efeitos:[/b] Relaxamento, felicidade, levantamento de humor, sedação suave\n'
                  '[b]Prêmios:[/b] Melhor indica no Emerald Cup 2016'),
                 ('MAC (Miracle Alien Cookies)',
@@ -566,14 +561,14 @@ VARIEDADES = {
                  '[b]Tipo:[/b] Sativa dominante (Clementine x Purple Punch)\n'
                  '[b]THC:[/b] 19–27%\n'
                  '[b]Terpenos:[/b] Limoneno, cariofileno, mirceno\n'
-                 '[b]Aroma:[/b] Laranja fresca, cítrico, floral — como a bebida\n'
+                 '[b]Aroma:[/b] Laranja fresca, cítrico, floral, como a bebida\n'
                  '[b]Efeitos:[/b] Levantamento de humor, energia, criatividade, sociável\n'
                  '[b]Uso médico:[/b] Depressão, fadiga, ansiedade social'),
                 ('Gelato 41 / 45',
                  '[b]Tipo:[/b] Variações da família Gelato (Cookie Fam Genetics)\n'
                  '[b]THC:[/b] 20–26%\n'
                  '[b]Diferenças:[/b]\n'
-                 '[b]#41 (Bacio Gelato):[/b] Mais escura, floral, intensa — sedação\n'
+                 '[b]#41 (Bacio Gelato):[/b] Mais escura, floral, intensa, sedação\n'
                  '[b]#45 (Sundae Driver cross):[/b] Mais doce, frutada, equilibrada\n'
                  '[b]Terpenos:[/b] Cariofileno, mirceno, limoneno\n'
                  '[b]Perfil:[/b] Numeração indica fenotipo diferente da mesma cruz genética'),
@@ -592,14 +587,14 @@ VARIEDADES = {
                  '5. [b]Seu endocanabinoide individual:[/b] Cada pessoa responde diferente\n\n'
                  '[i]Strains com nomes iguais de produtores diferentes '
                  'podem ter perfis completamente distintos.[/i]'),
-                ('Indica vs Sativa — A Verdade Científica',
+                ('Indica vs Sativa, A Verdade Científica',
                  'A distinção indica/sativa como preditor de efeito é '
                  '[b]simplificada e frequentemente imprecisa[/b].\n\n'
                  'Estudos mostram que a morfologia (alta/baixa, folha larga/fina) '
                  'não prevê bem o perfil de canabinoides ou terpenos.\n\n'
                  'O que realmente define o efeito:\n'
-                 '• [b]Relação THC:CBD[/b] — quanto CBD há para modular o THC\n'
-                 '• [b]Terpenos dominantes[/b] — mirceno = sedativo, '
+                 '• [b]Relação THC:CBD[/b], quanto CBD há para modular o THC\n'
+                 '• [b]Terpenos dominantes[/b], mirceno = sedativo, '
                  'limoneno/terpinoleno = energizante\n'
                  '• [b]Sua tolerância e bioquímica[/b]\n\n'
                  'Conclusão: leia o COA (laudo de análise) e os terpenos, '
@@ -619,7 +614,7 @@ CANABINOIDES = {
         {
             'titulo': '⚗️ Canabinoides Principais',
             'itens': [
-                ('THC — Tetrahidrocanabinol',
+                ('THC, Tetrahidrocanabinol',
                  '[b]Ponto de vaporização:[/b] 🌡️ 157°C\n'
                  '[b]Psicoativo:[/b] Sim\n'
                  '[b]Efeitos:[/b] Euforia, alteração sensorial, analgesia, '
@@ -629,7 +624,7 @@ CANABINOIDES = {
                  '[b]Atenção:[/b] Em doses altas ou em pessoas sensíveis pode causar '
                  'ansiedade, paranoia e taquicardia. Contraindicado em menores '
                  'e pessoas com predisposição a psicose.'),
-                ('CBD — Canabidiol',
+                ('CBD, Canabidiol',
                  '[b]Ponto de vaporização:[/b] 🌡️ 160–180°C\n'
                  '[b]Psicoativo:[/b] Não\n'
                  '[b]Efeitos:[/b] Ansiolítico, anticonvulsivante, anti-inflamatório, '
@@ -638,16 +633,16 @@ CANABINOIDES = {
                  'ansiedade, TEPT, inflamação crônica, dor neuropática.\n'
                  '[b]No Brasil:[/b] Regulamentado pela Anvisa. Produtos como Canabidiol Prati, '
                  'Charlotte\'s Web e Epidiolex disponíveis com prescrição.'),
-                ('CBG — Canabigerol',
+                ('CBG, Canabigerol',
                  '[b]Ponto de vaporização:[/b] 🌡️ 52°C (volátil a baixas temperaturas)\n'
                  '[b]Psicoativo:[/b] Não\n'
-                 '[b]Precursor:[/b] Chamado de "mãe dos canabinoides" — '
+                 '[b]Precursor:[/b] Chamado de "mãe dos canabinoides", '
                  'THC e CBD são sintetizados a partir do CBG.\n'
                  '[b]Efeitos:[/b] Antibacteriano, neuroprotetor, anti-inflamatório '
                  'intestinal, pode reduzir pressão intraocular (glaucoma).\n'
                  '[b]Status:[/b] Pesquisas em estágio inicial, disponível em '
                  'algumas formulações especializadas.'),
-                ('CBN — Canabidinol',
+                ('CBN, Canabidinol',
                  '[b]Ponto de vaporização:[/b] 🌡️ 185°C\n'
                  '[b]Psicoativo:[/b] Levemente (10–20% do THC)\n'
                  '[b]Origem:[/b] Produzido pela degradação oxidativa do THC '
@@ -656,7 +651,7 @@ CANABINOIDES = {
                  'potencial antibacteriano.\n'
                  '[b]Uso:[/b] Muito valorizado para distúrbios do sono. '
                  'Encontrado em cultivares maduros com colheita tardia.'),
-                ('CBC — Canabicrômeno',
+                ('CBC, Canabicrômeno',
                  '[b]Ponto de vaporização:[/b] 🌡️ 220°C\n'
                  '[b]Psicoativo:[/b] Não\n'
                  '[b]Efeitos:[/b] Anti-inflamatório, analgésico (potencializa THC '
@@ -768,11 +763,11 @@ CONSUMO = {
     'icone': '💨',
     'secoes': [
         {
-            'titulo': '♨️ Vaporização — O Método Recomendado',
+            'titulo': '♨️ Vaporização, O Método Recomendado',
             'itens': [
                 ('Como Funciona',
                  'O vaporizador aquece o material (flor seca ou extrato) a '
-                 'temperaturas entre [b]160°C e 220°C[/b] — abaixo do ponto de '
+                 'temperaturas entre [b]160°C e 220°C[/b], abaixo do ponto de '
                  'combustão (230°C+). Isso volatiliza os canabinoides e terpenos '
                  'sem queimar o material vegetal.'),
                 ('Faixas de Temperatura',
@@ -789,12 +784,12 @@ CONSUMO = {
                  '✅ Temperatura controlada preserva terpenos e canabinoides\n'
                  '✅ Sabor e aroma significativamente melhores\n'
                  '✅ Menos irritação respiratória\n'
-                 '✅ Maior eficiência — extrai mais canabinoides da mesma quantidade\n'
+                 '✅ Maior eficiência, extrai mais canabinoides da mesma quantidade\n'
                  '✅ AVB (Already Vaped Bud) ainda pode ser usado em infusões'),
             ]
         },
         {
-            'titulo': '🚫 Combustão — Por Que Evitar',
+            'titulo': '🚫 Combustão, Por Que Evitar',
             'itens': [
                 ('Os Riscos da Fumaça',
                  'A combustão de qualquer material orgânico a >230°C gera mais de '
@@ -821,7 +816,7 @@ CONSUMO = {
             ]
         },
         {
-            'titulo': '🧱 Prensado — O Que é e Por Que Evitar',
+            'titulo': '🧱 Prensado, O Que é e Por Que Evitar',
             'itens': [
                 ('O Que é o Prensado',
                  'O "prensado" (também chamado de tijolo, haxixe prensado ou '
@@ -835,43 +830,43 @@ CONSUMO = {
                  'O principal risco não é a cannabis em si, mas o que é '
                  '[b]misturado[/b] no processo de prensagem para aumentar o peso e volume:\n\n'
                  '[b]Adulterantes comuns identificados em análises:[/b]\n'
-                 '• [color=#FF5252]Henna[/color] — corante marrom/negro, '
+                 '• [color=#FF5252]Henna[/color], corante marrom/negro, '
                  'causa reação inflamatória pulmonar\n'
-                 '• [color=#FF5252]Cera de sapato / polish[/color] — '
+                 '• [color=#FF5252]Cera de sapato / polish[/color], '
                  'hidrocarbonetos tóxicos ao inalar\n'
-                 '• [color=#FF5252]Areia e terra compactada[/color] — '
+                 '• [color=#FF5252]Areia e terra compactada[/color], '
                  'partículas inaláveis causam pneumonite\n'
-                 '• [color=#FF5252]Breu e resinas sintéticas[/color] — '
+                 '• [color=#FF5252]Breu e resinas sintéticas[/color], '
                  'compostos voláteis tóxicos na combustão\n'
-                 '• [color=#FF5252]Açúcar e amido[/color] — fermentam e '
+                 '• [color=#FF5252]Açúcar e amido[/color], fermentam e '
                  'favorecem fungos; risco de aspergilose\n'
-                 '• [color=#FF5252]Compostos plásticos / PE[/color] — '
+                 '• [color=#FF5252]Compostos plásticos / PE[/color], '
                  'liberam dioxinas ao queimar\n'
-                 '• [color=#FF5252]Chumbo e metais pesados[/color] — '
+                 '• [color=#FF5252]Chumbo e metais pesados[/color], '
                  'detectados em amostras europeias para aumentar peso'),
                 ('Efeitos à Saúde',
                  '[b]Curto prazo:[/b]\n'
                  '• Tosse intensa, chiado, irritação das vias aéreas\n'
                  '• Dores de cabeça atípicas (especialmente após henna/resinas)\n'
                  '• Náusea e mal-estar além do esperado\n'
-                 '• Reações alérgicas (henna — parafenilenodiamina / PPD)\n\n'
+                 '• Reações alérgicas (henna, parafenilenodiamina / PPD)\n\n'
                  '[b]Longo prazo (uso frequente):[/b]\n'
                  '• Bronquite crônica e dano ao epitélio respiratório\n'
                  '• Pneumonite por corpo estranho (areia/terra)\n'
                  '• Acúmulo de metais pesados (chumbo, cádmio)\n'
                  '• Aspergilose pulmonar (fungos em material úmido/mal-curado)\n\n'
                  '[b]Nota:[/b] Esses danos são [i]adicionais[/i] aos já causados '
-                 'pela combustão em si — que já gera benzeno, alcatrão e CO.'),
+                 'pela combustão em si, que já gera benzeno, alcatrão e CO.'),
                 ('Como Identificar Adulteração',
                  '[b]Teste do vidro (adulteração com areia/terra):[/b]\n'
-                 'Esfregue um pouco em vidro limpo — resíduo granular indica '
+                 'Esfregue um pouco em vidro limpo, resíduo granular indica '
                  'adulteração com areia.\n\n'
                  '[b]Teste da bolha (bubble hash test):[/b]\n'
                  'Coloque um fragmento em chama: haxixe puro de resina borbulha '
                  'e queima de forma uniforme. Adulterado cheirará a plástico, '
                  'escurecerá de forma irregular ou não borbulhará.\n\n'
                  '[b]Teste do metal quente:[/b]\n'
-                 'Aquece uma agulha e toca o material — resina pura amolece e '
+                 'Aquece uma agulha e toca o material, resina pura amolece e '
                  'libera aroma de cannabis. Adulterantes plásticos derretem '
                  'diferente, com odor químico.\n\n'
                  '[b]Cor e textura:[/b] Prensado legítimo (seco) tem tom '
@@ -879,11 +874,11 @@ CONSUMO = {
                  'brilho excessivo levanta suspeita.'),
                 ('Alternativas Mais Seguras',
                  'Se não houver acesso a flor curada de qualidade:\n\n'
-                 '• [b]Óleos e cápsulas via associação/farmácia[/b] — '
+                 '• [b]Óleos e cápsulas via associação/farmácia[/b], '
                  'produto testado, sem adulteração\n'
-                 '• [b]Haxixe artesanal (dry sift / kief)[/b] — '
+                 '• [b]Haxixe artesanal (dry sift / kief)[/b], '
                  'produzido de material conhecido, sem aditivos\n'
-                 '• [b]Rosin prensado a frio[/b] — extração por '
+                 '• [b]Rosin prensado a frio[/b], extração por '
                  'pressão e calor de flor de qualidade, sem solventes\n\n'
                  '[b]Regra geral:[/b] Conhecer a origem do material '
                  'é a única forma de garantir que não há adulteração.'),
@@ -910,7 +905,7 @@ CONSUMO = {
                  '2. Manter por [b]60–90 segundos[/b] antes de engolir\n'
                  '3. Evitar comer ou beber por 10–15 min após\n'
                  '4. Começar com dose baixa (1–2 gotas) e aguardar 2h '
-                 'antes de redosar — efeito sublingual é mais lento que inalação'),
+                 'antes de redosar, efeito sublingual é mais lento que inalação'),
             ]
         },
         {
@@ -938,9 +933,9 @@ CONSUMO = {
                  'Cremes, loções, bálsamos e adesivos transdérmicos com '
                  'canabinoides aplicados diretamente na pele.\n\n'
                  '[b]Tópicos regulares:[/b] Agem localmente, não entram na '
-                 'corrente sanguínea — [b]sem efeito psicoativo[/b].\n\n'
+                 'corrente sanguínea, [b]sem efeito psicoativo[/b].\n\n'
                  '[b]Transdérmicos (adesivos):[/b] Atravessam a barreira da pele '
-                 'e atingem a corrente sanguínea — efeito sistêmico.'),
+                 'e atingem a corrente sanguínea, efeito sistêmico.'),
                 ('Indicações',
                  '• Dores musculares e articulares localizadas\n'
                  '• Artrite e inflamação local\n'
@@ -993,7 +988,7 @@ VAPORIZADORES = {
                 ('Cerâmica',
                  '[b]Características:[/b] Aquecimento mais uniforme, '
                  'inerte quimicamente, não altera sabor\n'
-                 '[b]Sabor:[/b] Mais limpo e puro — ideal para apreciação de terpenos\n'
+                 '[b]Sabor:[/b] Mais limpo e puro, ideal para apreciação de terpenos\n'
                  '[b]Durabilidade:[/b] Alta, mas frágil a impactos\n'
                  '[b]Limpeza:[/b] Fácil com álcool isopropílico\n'
                  '[b]Indicada para:[/b] Usuários que priorizam sabor e uso medicinal'),
@@ -1002,7 +997,7 @@ VAPORIZADORES = {
                  '[b]Sabor:[/b] Pode adicionar leve sabor metálico, '
                  'especialmente em altas temperaturas\n'
                  '[b]Durabilidade:[/b] Muito alta\n'
-                 '[b]Atenção:[/b] Evitar câmaras de alumínio — '
+                 '[b]Atenção:[/b] Evitar câmaras de alumínio, '
                  'liberam partículas em altas temperaturas. '
                  'Aço cirúrgico e titânio são seguros.'),
                 ('Quartzo e Vidro',
@@ -1018,16 +1013,16 @@ VAPORIZADORES = {
             'itens': [
                 ('Por Perfil de Uso',
                  '[b]Iniciante / Custo-benefício:[/b]\n'
-                 'DynaVap M (aquecido por maçarico) — R$400–500. '
+                 'DynaVap M (aquecido por maçarico), R$400–500. '
                  'Sem bateria, durabilidade extrema, aprendizado da técnica.\n\n'
                  '[b]Uso diário portátil:[/b]\n'
-                 'Mighty+ ou Crafty+ (Storz & Bickel) — R$1.500–2.000. '
+                 'Mighty+ ou Crafty+ (Storz & Bickel), R$1.500–2.000. '
                  'Padrão-ouro em portáteis, convecção híbrida, vapor excelente.\n\n'
                  '[b]Uso doméstico / médico:[/b]\n'
-                 'Volcano Hybrid — R$4.000+. '
+                 'Volcano Hybrid, R$4.000+. '
                  'Referência global, uso em balão ou whip, vapor suave e eficiente.\n\n'
                  '[b]Econômico portátil:[/b]\n'
-                 'Arizer Solo 2 / Air 2 — R$600–900. '
+                 'Arizer Solo 2 / Air 2, R$600–900. '
                  'Excelente custo-benefício, troca de bateria possível.'),
                 ('Dicas de Compra',
                  '• Comprar de revendedores autorizados para garantia\n'
@@ -1064,14 +1059,14 @@ ASSOCIACOES = {
                  'A [b]RDC 660/2022[/b] (atualizada pela RDC 327/2019) da Anvisa '
                  'regula o acesso à cannabis medicinal no Brasil por dois caminhos:\n\n'
                  '[b]1. Produtos registrados/notificados:[/b] Canabidiol Prati-Donaduzzi, '
-                 'Charlotte\'s Web, Epidiolex — disponíveis em farmácias com prescrição.\n\n'
+                 'Charlotte\'s Web, Epidiolex, disponíveis em farmácias com prescrição.\n\n'
                  '[b]2. Importação por pessoa física:[/b] Para produtos não disponíveis '
                  'no Brasil, mediante autorização da Anvisa (formulário online), '
                  'prescrição médica e laudo médico.'),
                 ('Associações de Pacientes',
                  'As associações são entidades sem fins lucrativos que cultivam '
                  'cannabis e fornecem produtos aos associados. Operam em uma '
-                 '[b]zona cinza jurídica[/b] — não são formalmente legalizadas, '
+                 '[b]zona cinza jurídica[/b], não são formalmente legalizadas, '
                  'mas decisões judiciais têm protegido suas atividades com base '
                  'no direito à saúde e dignidade humana.\n\n'
                  'Vantagens sobre farmácia:\n'
@@ -1115,8 +1110,8 @@ ASSOCIACOES = {
             'itens': [
                 ('⭐ Associações (ex: Flor da Vida)',
                  'O processo mais acessível para a maioria dos pacientes:\n\n'
-                 '✅ [b]Receita médica[/b] — prescrição de médico habilitado\n'
-                 '✅ [b]Laudo médico[/b] — documento descrevendo o diagnóstico\n'
+                 '✅ [b]Receita médica[/b], prescrição de médico habilitado\n'
+                 '✅ [b]Laudo médico[/b], documento descrevendo o diagnóstico\n'
                  '✅ RG/CPF e comprovante de residência\n\n'
                  '[color=#4CAF50]Não exige autorização da Anvisa.[/color] '
                  'Processo mais simples, produtos mais baratos e maior variedade.'),
@@ -1130,7 +1125,7 @@ ASSOCIACOES = {
                  'Para produtos não registrados no Brasil (Charlotte\'s Web, Elixinol, etc.):\n\n'
                  '✅ [b]Receita médica[/b]\n'
                  '✅ [b]Laudo médico[/b]\n'
-                 '✅ [b]Autorização Anvisa[/b] — solicitada em anvisa.gov.br/cannabis\n\n'
+                 '✅ [b]Autorização Anvisa[/b], solicitada em anvisa.gov.br/cannabis\n\n'
                  'Processo mais burocrático. A autorização é pessoal e intransferível. '
                  'Válida por 1 ano, renovável. Tempo médio de aprovação: 3–10 dias úteis.'),
                 ('Como Obter a Autorização Anvisa',
@@ -1147,7 +1142,7 @@ ASSOCIACOES = {
         {
             'titulo': '🏢 Principais Associações no Brasil',
             'itens': [
-                ('⭐ Flor da Vida — Associação de Pacientes',
+                ('⭐ Flor da Vida, Associação de Pacientes',
                  '[b]Site:[/b] flordavida.ong.br/site/\n'
                  '[b]Documentação exigida:[/b]\n'
                  '✅ Receita médica\n'
@@ -1155,20 +1150,20 @@ ASSOCIACOES = {
                  '[color=#4CAF50]Não exige autorização Anvisa.[/color]\n\n'
                  '[b]Perfil:[/b] ONG dedicada ao acesso à cannabis medicinal, '
                  'atendimento humanizado, foco em pacientes que precisam de suporte.\n'
-                 '[b]Produtos:[/b] Óleos, tinturas e outros — full spectrum e CBD isolado.'),
-                ('ABRACE — Associação Brasileira de Pacientes de Cannabis',
+                 '[b]Produtos:[/b] Óleos, tinturas e outros, full spectrum e CBD isolado.'),
+                ('ABRACE, Associação Brasileira de Pacientes de Cannabis',
                  '[b]Estado:[/b] Ceará (Fortaleza)\n'
-                 '[b]Fundação:[/b] 2014 — pioneira no Brasil\n'
+                 '[b]Fundação:[/b] 2014, pioneira no Brasil\n'
                  '[b]Perfil:[/b] Atende principalmente crianças com epilepsia refratária\n'
                  '[b]Contato:[/b] abraceceara.org.br'),
-                ('APEPI — Ação pela Paz e pelo Instituto da Planta',
+                ('APEPI, Ação pela Paz e pelo Instituto da Planta',
                  '[b]Estado:[/b] Rio de Janeiro\n'
                  '[b]Perfil:[/b] Foco em epilepsia pediátrica, ativismo e pesquisa\n'
                  '[b]Destaque:[/b] Uma das mais antigas e reconhecidas do RJ'),
-                ('ACNPP — Associação Cannabis para Neuro e Psiquiatria de Porto Alegre',
+                ('ACNPP, Associação Cannabis para Neuro e Psiquiatria de Porto Alegre',
                  '[b]Estado:[/b] Rio Grande do Sul\n'
                  '[b]Perfil:[/b] Foco em transtornos neurológicos e psiquiátricos'),
-                ('ASPECAN — Associação de Pacientes e Familiares Usuários de Cannabis',
+                ('ASPECAN, Associação de Pacientes e Familiares Usuários de Cannabis',
                  '[b]Estado:[/b] São Paulo\n'
                  '[b]Perfil:[/b] Grande base de associados, variedade de produtos'),
                 ('Outras Associações por Estado',
@@ -1198,7 +1193,7 @@ ONDE_COMPRAR = {
                  'convencionais (Pague Menos, Drogasil, Ultrafarma). '
                  'Necessita receita médica. Concentrações: 200mg, 600mg, 1200mg em 30ml.\n\n'
                  '[b]Importação via Anvisa:[/b] Para produtos internacionais '
-                 '(Charlotte\'s Web, Elixinol, etc.) — solicitar autorização em anvisa.gov.br/cannabis.\n\n'
+                 '(Charlotte\'s Web, Elixinol, etc.), solicitar autorização em anvisa.gov.br/cannabis.\n\n'
                  '[b]Farmácias de manipulação:[/b] Algumas manipulam CBD em diferentes '
                  'concentrações mediante laudo e receita.'),
                 ('Associações de Pacientes',
@@ -1221,7 +1216,7 @@ ONDE_COMPRAR = {
                  '[b]São Paulo:[/b] Concentração maior no centro e Vila Madalena\n'
                  '[b]Rio de Janeiro:[/b] Ipanema, Lapa\n'
                  '[b]Outras cidades:[/b] Buscar "grow shop [cidade]" no Google Maps'),
-                ('⭐ Loja High420 — Vaporizadores de Ervas',
+                ('⭐ Loja High420, Vaporizadores de Ervas',
                  '[b]Site:[/b] lojahigh420.com/vaporizadores/vaporizador-de-ervas/\n'
                  '[b]Especialidade:[/b] Vaporizadores de ervas nacionais e importados, '
                  'acessórios e peças de reposição.\n'
@@ -1231,7 +1226,7 @@ ONDE_COMPRAR = {
                  '• Dankstop Brasil\n'
                  '• Vaporizer Shop Brasil\n'
                  '• Grow Indoor (equipamentos)\n'
-                 '• Mercado Livre (revendedores verificados — atenção à procedência)\n\n'
+                 '• Mercado Livre (revendedores verificados, atenção à procedência)\n\n'
                  '[b]Dica:[/b] Para garantia válida e produto original, '
                  'prefira revendedores autorizados pelos fabricantes '
                  '(Storz & Bickel tem revendedores oficiais no Brasil).'),

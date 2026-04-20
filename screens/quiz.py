@@ -1,4 +1,4 @@
-# screens/quiz.py — Quiz de direcionamento personalizado do CannaGuia
+# screens/quiz.py, Quiz de direcionamento personalizado do CannaGuia
 
 from kivy.uix.screenmanager import Screen
 from kivy.uix.boxlayout import BoxLayout
@@ -34,32 +34,32 @@ PERGUNTAS = [
         'id': 'diagnostico',
         'pergunta': 'Você possui diagnóstico médico e acompanhamento profissional?',
         'opcoes': [
-            ('sim', '✅  Sim — tenho médico acompanhando'),
-            ('nao', '❌  Não — ainda não consultei um médico'),
+            ('sim', '✅  Sim, tenho médico acompanhando'),
+            ('nao', '❌  Não, ainda não consultei um médico'),
         ],
     },
     {
         'id': 'gastrico',
         'pergunta': 'Você tem sensibilidade gástrica ou problemas intestinais?',
         'opcoes': [
-            ('sim', '✅  Sim — tenho gastrite, SII ou sensibilidade'),
-            ('nao', '❌  Não — sem problemas gastrointestinais'),
+            ('sim', '✅  Sim, tenho gastrite, SII ou sensibilidade'),
+            ('nao', '❌  Não, sem problemas gastrointestinais'),
         ],
     },
     {
         'id': 'efeito',
         'pergunta': 'Qual tipo de início de efeito você prefere?',
         'opcoes': [
-            ('imediato', '⚡  Imediato — efeito em minutos (vaporização)'),
-            ('gradual',  '🌊  Gradual — efeito mais suave e duradouro (óleo/sublingual)'),
+            ('imediato', '⚡  Imediato, efeito em minutos (vaporização)'),
+            ('gradual',  '🌊  Gradual, efeito mais suave e duradouro (óleo/sublingual)'),
         ],
     },
     {
         'id': 'experiencia',
         'pergunta': 'Você tem experiência prévia com cannabis?',
         'opcoes': [
-            ('sim', '✅  Sim — já usei cannabis antes'),
-            ('nao', '🌱  Não — sou iniciante / nunca usei'),
+            ('sim', '✅  Sim, já usei cannabis antes'),
+            ('nao', '🌱  Não, sou iniciante / nunca usei'),
         ],
     },
 ]
@@ -78,17 +78,17 @@ def calcular_resultado(respostas: dict) -> dict:
 
     # ── Recomendação de produto ───────────────────────────────────────────────
     if finalidade == 'epilepsia':
-        produto = 'CBD Alto (10:1 ou maior) — full spectrum ou isolado'
+        produto = 'CBD Alto (10:1 ou maior), full spectrum ou isolado'
         ratio   = 'CBD dominante (ex.: 20:1 CBD:THC)'
     elif finalidade == 'ansiedade':
-        produto = 'CBD Alto (10:1 ou maior) — broad spectrum ou isolado'
-        ratio   = 'CBD dominante — THC mínimo para evitar piora da ansiedade'
+        produto = 'CBD Alto (10:1 ou maior), broad spectrum ou isolado'
+        ratio   = 'CBD dominante, THC mínimo para evitar piora da ansiedade'
     elif finalidade == 'dor':
         if experiencia:
             produto = 'Balanceado (1:1 CBD:THC) ou CBD moderado (5:1)'
-            ratio   = 'Full spectrum 1:1 — sinergia para dor crônica'
+            ratio   = 'Full spectrum 1:1, sinergia para dor crônica'
         else:
-            produto = 'CBD moderado (5:1 ou 10:1) — iniciar com THC baixo'
+            produto = 'CBD moderado (5:1 ou 10:1), iniciar com THC baixo'
             ratio   = 'Começar com CBD alto e ajustar gradualmente'
     elif finalidade == 'sono':
         if experiencia:
@@ -96,14 +96,14 @@ def calcular_resultado(respostas: dict) -> dict:
             ratio   = 'THC moderado + CBN para sono profundo'
         else:
             produto = 'CBD alto com linalol (terpeno sedativo)'
-            ratio   = 'CBD alto — colheita tardia (mais CBN)'
+            ratio   = 'CBD alto, colheita tardia (mais CBN)'
     elif finalidade == 'recreativo':
         if experiencia:
-            produto = 'Conforme preferência — híbrida ou sativa para dia, indica para noite'
+            produto = 'Conforme preferência, híbrida ou sativa para dia, indica para noite'
             ratio   = 'THC moderado a alto, conforme tolerância'
         else:
             produto = 'CBD moderado (5:1) para primeiras experiências'
-            ratio   = 'Iniciar com CBD — adaptar ao efeito antes de THC'
+            ratio   = 'Iniciar com CBD, adaptar ao efeito antes de THC'
     else:
         produto = 'CBD moderado (5:1) como ponto de partida'
         ratio   = 'Consultar médico para orientação personalizada'
