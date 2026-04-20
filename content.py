@@ -11,7 +11,7 @@ CULTIVO = {
         {
             'titulo': '🌰 Sementes vs Clones',
             'itens': [
-                ('Sementes, Vantagens',
+                ('Sementes e Vantagens',
                  'Maior diversidade genética, sem risco de transmissão de pragas e '
                  'doenças via material vegetativo, vigor híbrido em F1, facilidade de '
                  'armazenamento e transporte.'),
@@ -21,7 +21,7 @@ CULTIVO = {
                  'Ideal para cultivo medicinal, apenas fêmeas produzem flores ricas em canabinoides.\n\n'
                  '[b]Autoflorescentes:[/b] Florescem por idade (geralmente 70–90 dias), '
                  'independentemente do fotoperíodo. Ótimas para iniciantes.'),
-                ('Clones, Vantagens',
+                ('Clones e Vantagens',
                  'Cópia genética exata da planta-mãe, sexo garantido, uniformidade '
                  'na produção, início mais rápido sem fase de germinação. '
                  'Risco: podem transmitir pragas e doenças da planta-mãe.'),
@@ -93,13 +93,13 @@ CULTIVO = {
         {
             'titulo': '✂️ Colheita',
             'itens': [
-                ('Quando Colher, Tricomas',
+                ('Quando Colher e Tricomas',
                  'O método mais preciso usa lupa 60–100x ou microscópio para observar tricomas:\n\n'
                  '[b]Transparentes/Cristalinos:[/b] Muito cedo, THC ainda se formando.\n'
                  '[b]Leitosos/Opacos:[/b] THC máximo, efeito mais cerebral e energético.\n'
                  '[b]Âmbar (20–30%):[/b] THC convertendo em CBN, efeito mais sedativo e corporal.\n\n'
                  'Para uso medicinal: geralmente 70–80% leitosos + 10–20% âmbar.'),
-                ('Quando Colher, Pistilos',
+                ('Quando Colher e Pistilos',
                  'Método visual sem equipamento:\n'
                  '[b]50–70% escuros/curvados:[/b] Colheita precoce.\n'
                  '[b]70–90% escuros/curvados:[/b] Maturação ideal.\n'
@@ -168,7 +168,7 @@ LEI_CULTIVO = {
                  'O [b]STJ e STF[/b] têm concedido habeas corpus a pacientes '
                  'que cultivam para uso medicinal próprio, com base em:\n\n'
                  '• Art. 196 CF, Direito à saúde\n'
-                 '• Art. 1º CF, Dignidade da pessoa humana\n'
+                 '• Art. 1º CF, Dignidade humana\n'
                  '• Princípio da proporcionalidade\n\n'
                  'Isso não legaliza o cultivo, oferece proteção judicial '
                  'individual caso a caso. Cada processo é analisado separadamente.'),
@@ -213,7 +213,7 @@ LEI_CULTIVO = {
                  '• [b]OAB Cannabis[/b], Comissão especial da OAB\n'
                  '• [b]ABRACANNABIS[/b], Lista de advogados parceiros por estado\n'
                  '• [b]APEPI / ABRACE / Flor da Vida[/b], Suporte jurídico a associados\n'
-                 '• [b]Instituto Igarapé[/b], Advocacy em política de drogas\n'
+                 '• [b]Instituto Igarapé[/b], Advocacia em política de drogas\n'
                  '• Grupos de pacientes no Telegram/Facebook por estado\n\n'
                  '[i]Verifique sempre a especialização em cannabis/saúde antes de contratar.[/i]'),
                 ('Defensoria Pública, Atendimento Gratuito',
