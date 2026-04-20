@@ -13,16 +13,25 @@ let quizRespostas = {};
 let quizPasso = 0;
 
 // ── Navigation ────────────────────────────────────────────────────────────────
-function showScreen(id) {
+function showScreen(id, pushState = true) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
   document.getElementById('screen-' + id).classList.add('active');
   currentScreen = id;
   window.scrollTo(0, 0);
+  if (pushState) {
+    history.pushState({ screen: id }, '', '#' + id);
+  }
 }
 
 function goHome() {
-  showScreen('home');
+  history.back();
 }
+
+window.addEventListener('popstate', e => {
+  const id = e.state?.screen || 'home';
+  showScreen(id, false);
+  if (id === 'quiz') renderQuizStep(quizPasso);
+});
 
 // ── BUILD SEARCH INDEX ────────────────────────────────────────────────────────
 const SEARCH_INDEX = [];
