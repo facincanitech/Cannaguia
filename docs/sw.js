@@ -1,4 +1,4 @@
-const CACHE = 'cannaguia-v1';
+const CACHE = 'cannaguia-v2';
 const FILES = [
   './',
   './index.html',
