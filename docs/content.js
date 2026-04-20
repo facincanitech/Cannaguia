@@ -15,6 +15,15 @@ const CULTIVO = {
       ]
     },
     {
+      titulo: '🛒 Onde Conseguir Sementes',
+      itens: [
+        ['Status Legal no Brasil', 'A venda de sementes de cannabis é uma <b>zona cinza legal</b> no Brasil. Não há lei específica proibindo a comercialização de sementes como "souvenirs para coleção", mas o cultivo sem autorização da Anvisa é ilegal.<br><br>Diversas lojas operam sob essa premissa com disclaimer de "uso exclusivo para coleção". O comprador assume os riscos legais.<br><br><b>Importante:</b> Adquirir sementes sem o habeas corpus preventivo não oferece proteção jurídica. Consulte a seção <b>Lei de Cultivo</b> antes.'],
+        ['Bancos de Sementes — Internacionais', '<b>Seedsman (UK)</b> — grande variedade, envio discreto, preços acessíveis<br><b>ILGM — I Love Growing Marijuana</b> — garantia de germinação, suporte<br><b>Barney\'s Farm (NL)</b> — genéticas premium, múltiplos Cannabis Cup<br><b>Royal Queen Seeds (ESP)</b> — muito popular, boa relação custo-benefício<br><b>Dinafem (ESP)</b> — especialista em feminizadas e medicinais CBD<br><br><i>Fique atento à alfândega: sementes podem ser retidas. Bancos confiáveis reenviam em caso de apreensão.</i>'],
+        ['Bancos de Sementes — Nacionais', '<b>Brazilian Seed Bank</b> — genéticas nacionais e importadas<br><b>Grow Shop Brasil</b> — lojas em SP e online<br><b>Lojas em São Paulo</b> — concentração no centro e Vila Madalena<br><b>Rio de Janeiro</b> — Ipanema, Lapa e grow shops da região<br><br>Vantagens do nacional: sem risco alfandegário, pagamento em real, entrega mais rápida. Desvantagem: variedade menor.<br><br><i>Pesquise reviews em fóruns como Canna.com.br antes de comprar.</i>'],
+        ['Como Escolher uma Boa Semente', '<b>Cor e firmeza:</b> Sementes maduras são marrons/cinza com listras tigradas, duras ao apertar. Sementes verdes ou muito claras são imaturas — baixa taxa de germinação.<br><br><b>COA / Ficha técnica:</b> Bancos sérios informam THC estimado, CBD, tempo de floração e tipo (regular/fem/auto).<br><br><b>Desconfie de:</b> Preços muito abaixo do mercado, sem ficha técnica, sem histórico do vendedor.<br><br><b>Armazenamento:</b> Local escuro, fresco e seco. Geladeira (4–8°C) com sílica gel preserva até 5+ anos.'],
+      ]
+    },
+    {
       titulo: '🌿 Fases da Planta',
       itens: [
         ['Germinação (3–7 dias)', 'A semente absorve água e a radícula (raiz embrionária) rompe a casca. Temperatura ideal: 22–26°C. Umidade: 70–90%. Método mais simples: entre dois lenços úmidos, em local escuro e quente.'],
@@ -249,13 +258,6 @@ const ONDE_COMPRAR = {
         ['Farmácias com Produtos Anvisa', '<b>Canabidiol Prati-Donaduzzi:</b> Disponível em farmácias convencionais (Pague Menos, Drogasil, Ultrafarma). Necessita receita médica. Concentrações: 200mg, 600mg, 1200mg em 30ml.<br><br><b>Importação via Anvisa:</b> Para produtos internacionais (Charlotte\'s Web, Elixinol, etc.) — solicitar autorização em anvisa.gov.br/cannabis.<br><br><b>Farmácias de manipulação:</b> Algumas manipulam CBD em diferentes concentrações mediante laudo e receita.'],
         ['Associações de Pacientes', 'Veja seção "Associações" para lista completa e processo de associação.<br><br>Vantagens: menor custo, maior variedade, suporte de comunidade.<br>Requisito: laudo médico + documentação.'],
         ['Plataformas Online Especializadas', '<b>Dr. Cannabis:</b> Telemedicina + marketplace de produtos regulamentados<br><b>Cannect:</b> Plataforma de prescrição e acesso a produtos<br><b>HempMeds Brazil:</b> Importadora de produtos Charlotte\'s Web<br><br><i>Atenção: Desconfie de sites sem CNPJ claro, sem produtos com laudos de análise (COA) e que vendam THC livremente.</i>'],
-      ]
-    },
-    {
-      titulo: '🌱 Sementes (Coleção)',
-      itens: [
-        ['Status Legal no Brasil', 'A venda de sementes de cannabis é uma <b>zona cinza legal</b> no Brasil. Não há lei específica proibindo a venda de sementes como "souvenirs para coleção", mas o cultivo é proibido sem autorização.<br><br>Diversas lojas operam no Brasil sob essa premissa, geralmente com disclaimer de "uso exclusivo para coleção". O comprador assume os riscos legais.'],
-        ['Bancos de Sementes Confiáveis', '<b>Internacionais com envio ao Brasil:</b><br>• Seedsman (UK) — grande variedade, envio discreto<br>• ILGM (I Love Growing Marijuana) — garantia de germinação<br>• Barney\'s Farm (NL) — genéticas premium<br><br><b>Nacionais:</b><br>• Brazilian Seed Bank<br>• Grow Shop Brasil<br>• Diversas lojas em São Paulo e Rio de Janeiro<br><br><i>Pesquise reviews em fóruns como Canna.com.br antes de comprar.</i>'],
       ]
     },
     {

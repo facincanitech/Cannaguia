@@ -33,6 +33,45 @@ CULTIVO = {
             ]
         },
         {
+            'titulo': '🛒 Onde Conseguir Sementes',
+            'itens': [
+                ('Status Legal no Brasil',
+                 'A venda de sementes de cannabis é uma [b]zona cinza legal[/b] no Brasil. '
+                 'Não há lei específica proibindo a comercialização de sementes como '
+                 '"souvenirs para coleção", mas o cultivo sem autorização da Anvisa é ilegal.\n\n'
+                 'Diversas lojas operam sob essa premissa com disclaimer de '
+                 '"uso exclusivo para coleção". O comprador assume os riscos legais.\n\n'
+                 '[b]Importante:[/b] Adquirir sementes sem o habeas corpus preventivo '
+                 'não oferece proteção jurídica. Consulte a seção [b]Lei de Cultivo[/b] antes.'),
+                ('Bancos de Sementes — Internacionais',
+                 '[b]Seedsman (UK)[/b] — grande variedade, envio discreto, preços acessíveis\n'
+                 '[b]ILGM — I Love Growing Marijuana[/b] — garantia de germinação, suporte\n'
+                 '[b]Barney\'s Farm (NL)[/b] — genéticas premium, múltiplos Cannabis Cup\n'
+                 '[b]Royal Queen Seeds (ESP)[/b] — muito popular, boa relação custo-benefício\n'
+                 '[b]Dinafem (ESP)[/b] — especialista em feminizadas e medicinais CBD\n\n'
+                 '[i]Fique atento à alfândega: sementes podem ser retidas. '
+                 'Bancos confiáveis reenviam em caso de apreensão.[/i]'),
+                ('Bancos de Sementes — Nacionais',
+                 '[b]Brazilian Seed Bank[/b] — genéticas nacionais e importadas\n'
+                 '[b]Grow Shop Brasil[/b] — lojas em SP e online\n'
+                 '[b]Lojas em São Paulo[/b] — concentração no centro e Vila Madalena\n'
+                 '[b]Rio de Janeiro[/b] — Ipanema, Lapa e grow shops da região\n\n'
+                 'Vantagens do nacional: sem risco alfandegário, pagamento em real, '
+                 'entrega mais rápida. Desvantagem: variedade menor.\n\n'
+                 '[i]Pesquise reviews em fóruns como Canna.com.br antes de comprar.[/i]'),
+                ('Como Escolher uma Boa Semente',
+                 '[b]Cor e firmeza:[/b] Sementes maduras são marrons/cinza com '
+                 'listras tigradas, duras ao apertar. Sementes verdes ou muito claras '
+                 'são imaturas — baixa taxa de germinação.\n\n'
+                 '[b]COA / Ficha técnica:[/b] Bancos sérios informam '
+                 'THC estimado, CBD, tempo de floração e tipo (regular/fem/auto).\n\n'
+                 '[b]Desconfie de:[/b] Preços muito abaixo do mercado, sem ficha '
+                 'técnica, sem histórico do vendedor.\n\n'
+                 '[b]Armazenamento:[/b] Local escuro, fresco e seco. '
+                 'Geladeira (4–8°C) com sílica gel preserva até 5+ anos.'),
+            ]
+        },
+        {
             'titulo': '🌿 Fases da Planta',
             'itens': [
                 ('Germinação (3–7 dias)',
@@ -782,6 +821,75 @@ CONSUMO = {
             ]
         },
         {
+            'titulo': '🧱 Prensado — O Que é e Por Que Evitar',
+            'itens': [
+                ('O Que é o Prensado',
+                 'O "prensado" (também chamado de tijolo, haxixe prensado ou '
+                 '[i]brick weed[/i]) é cannabis de baixa qualidade comprimida em '
+                 'blocos para facilitar transporte e armazenamento no tráfico ilegal.\n\n'
+                 'Difere do haxixe artesanal de qualidade (charas, dry sift, rosin): '
+                 'enquanto o haxixe legítimo é resina concentrada de tricomas, '
+                 'o prensado é material vegetal misturado, comprimido com alta pressão '
+                 'e calor, destruindo grande parte dos terpenos e canabinoides.'),
+                ('Por Que o Prensado é Perigoso',
+                 'O principal risco não é a cannabis em si, mas o que é '
+                 '[b]misturado[/b] no processo de prensagem para aumentar o peso e volume:\n\n'
+                 '[b]Adulterantes comuns identificados em análises:[/b]\n'
+                 '• [color=#FF5252]Henna[/color] — corante marrom/negro, '
+                 'causa reação inflamatória pulmonar\n'
+                 '• [color=#FF5252]Cera de sapato / polish[/color] — '
+                 'hidrocarbonetos tóxicos ao inalar\n'
+                 '• [color=#FF5252]Areia e terra compactada[/color] — '
+                 'partículas inaláveis causam pneumonite\n'
+                 '• [color=#FF5252]Breu e resinas sintéticas[/color] — '
+                 'compostos voláteis tóxicos na combustão\n'
+                 '• [color=#FF5252]Açúcar e amido[/color] — fermentam e '
+                 'favorecem fungos; risco de aspergilose\n'
+                 '• [color=#FF5252]Compostos plásticos / PE[/color] — '
+                 'liberam dioxinas ao queimar\n'
+                 '• [color=#FF5252]Chumbo e metais pesados[/color] — '
+                 'detectados em amostras europeias para aumentar peso'),
+                ('Efeitos à Saúde',
+                 '[b]Curto prazo:[/b]\n'
+                 '• Tosse intensa, chiado, irritação das vias aéreas\n'
+                 '• Dores de cabeça atípicas (especialmente após henna/resinas)\n'
+                 '• Náusea e mal-estar além do esperado\n'
+                 '• Reações alérgicas (henna — parafenilenodiamina / PPD)\n\n'
+                 '[b]Longo prazo (uso frequente):[/b]\n'
+                 '• Bronquite crônica e dano ao epitélio respiratório\n'
+                 '• Pneumonite por corpo estranho (areia/terra)\n'
+                 '• Acúmulo de metais pesados (chumbo, cádmio)\n'
+                 '• Aspergilose pulmonar (fungos em material úmido/mal-curado)\n\n'
+                 '[b]Nota:[/b] Esses danos são [i]adicionais[/i] aos já causados '
+                 'pela combustão em si — que já gera benzeno, alcatrão e CO.'),
+                ('Como Identificar Adulteração',
+                 '[b]Teste do vidro (adulteração com areia/terra):[/b]\n'
+                 'Esfregue um pouco em vidro limpo — resíduo granular indica '
+                 'adulteração com areia.\n\n'
+                 '[b]Teste da bolha (bubble hash test):[/b]\n'
+                 'Coloque um fragmento em chama: haxixe puro de resina borbulha '
+                 'e queima de forma uniforme. Adulterado cheirará a plástico, '
+                 'escurecerá de forma irregular ou não borbulhará.\n\n'
+                 '[b]Teste do metal quente:[/b]\n'
+                 'Aquece uma agulha e toca o material — resina pura amolece e '
+                 'libera aroma de cannabis. Adulterantes plásticos derretem '
+                 'diferente, com odor químico.\n\n'
+                 '[b]Cor e textura:[/b] Prensado legítimo (seco) tem tom '
+                 'verde-amarronzado. Material muito escuro/preto ou com '
+                 'brilho excessivo levanta suspeita.'),
+                ('Alternativas Mais Seguras',
+                 'Se não houver acesso a flor curada de qualidade:\n\n'
+                 '• [b]Óleos e cápsulas via associação/farmácia[/b] — '
+                 'produto testado, sem adulteração\n'
+                 '• [b]Haxixe artesanal (dry sift / kief)[/b] — '
+                 'produzido de material conhecido, sem aditivos\n'
+                 '• [b]Rosin prensado a frio[/b] — extração por '
+                 'pressão e calor de flor de qualidade, sem solventes\n\n'
+                 '[b]Regra geral:[/b] Conhecer a origem do material '
+                 'é a única forma de garantir que não há adulteração.'),
+            ]
+        },
+        {
             'titulo': '💧 Via Sublingual (Óleos)',
             'itens': [
                 ('Como Funciona',
@@ -1103,29 +1211,6 @@ ONDE_COMPRAR = {
                  '[b]HempMeds Brazil:[/b] Importadora de produtos Charlotte\'s Web\n\n'
                  '[i]Atenção: Desconfie de sites sem CNPJ claro, sem produtos '
                  'com laudos de análise (COA) e que vendam THC livremente.[/i]'),
-            ]
-        },
-        {
-            'titulo': '🌱 Sementes (Coleção)',
-            'itens': [
-                ('Status Legal no Brasil',
-                 'A venda de sementes de cannabis é uma [b]zona cinza legal[/b] no Brasil. '
-                 'Não há lei específica proibindo a venda de sementes como '
-                 '"souvenirs para coleção", mas o cultivo é proibido sem autorização.\n\n'
-                 'Diversas lojas operam no Brasil sob essa premissa, '
-                 'geralmente com disclaimer de "uso exclusivo para coleção". '
-                 'O comprador assume os riscos legais.'),
-                ('Bancos de Sementes Confiáveis',
-                 '[b]Internacionais com envio ao Brasil:[/b]\n'
-                 '• Seedsman (UK) — grande variedade, envio discreto\n'
-                 '• ILGM (I Love Growing Marijuana) — garantia de germinação\n'
-                 '• Barney\'s Farm (NL) — genéticas premium\n\n'
-                 '[b]Nacionais:[/b]\n'
-                 '• Brazilian Seed Bank\n'
-                 '• Grow Shop Brasil\n'
-                 '• Diversas lojas em São Paulo e Rio de Janeiro\n\n'
-                 '[i]Pesquise reviews em fóruns como Canna.com.br '
-                 'antes de comprar.[/i]'),
             ]
         },
         {
