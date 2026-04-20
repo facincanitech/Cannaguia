@@ -88,6 +88,7 @@ const MENU_ITENS = [
   { id: 'lei_cultivo',  icone: '⚖️',  label: 'Lei de Cultivo',         sub: 'Habeas corpus, direitos e advogados' },
   { id: 'cultivo',      icone: '🌱',  label: 'Guia de Cultivo',         sub: 'Sementes, fases, colheita e cura' },
   { id: 'canabinoides', icone: '🔬',  label: 'Canabinoides & Terpenos', sub: 'THC, CBD, CBG, terpenos' },
+  { id: 'variedades',   icone: '🌿',  label: 'Variedades & Strains',    sub: 'Kush, Haze, Hemp, Manga Rosa e mais' },
   { id: 'consumo',      icone: '💨',  label: 'Métodos de Consumo',      sub: 'Vaporização, óleo, oral' },
   { id: 'vaporizadores',icone: '🌬️', label: 'Vaporizadores',           sub: 'Tipos, câmaras, escolha' },
   { id: 'associacoes',  icone: '🏛️', label: 'Associações',             sub: 'Como se associar, documentos' },

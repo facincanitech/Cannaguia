@@ -25,7 +25,7 @@ for _f in _fontes_emoji:
         break
 
 # Importar conteúdo estático
-from content import CULTIVO, LEI_CULTIVO, CANABINOIDES, CONSUMO, VAPORIZADORES, ASSOCIACOES, ONDE_COMPRAR
+from content import CULTIVO, LEI_CULTIVO, CANABINOIDES, VARIEDADES, CONSUMO, VAPORIZADORES, ASSOCIACOES, ONDE_COMPRAR
 
 # Importar telas
 from screens.home       import TelaHome
@@ -65,6 +65,11 @@ class CannaGuiaApp(App):
             dados=CANABINOIDES,
             nome_anterior='home',
             name='canabinoides',
+        ))
+        sm.add_widget(TelaBase(
+            dados=VARIEDADES,
+            nome_anterior='home',
+            name='variedades',
         ))
         sm.add_widget(TelaBase(
             dados=CONSUMO,

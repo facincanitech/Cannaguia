@@ -17,7 +17,7 @@ from theme import (
     VERDE_HOVER, TEXTO_BRANCO, TEXTO_CINZA, TEXTO_MUDO,
     TRANSPARENTE, EMOJI_FONT, LOGO_IMG,
 )
-from content import CULTIVO, CANABINOIDES, CONSUMO, VAPORIZADORES, ASSOCIACOES, ONDE_COMPRAR
+from content import CULTIVO, CANABINOIDES, VARIEDADES, CONSUMO, VAPORIZADORES, ASSOCIACOES, ONDE_COMPRAR
 
 
 # ── Menu principal ────────────────────────────────────────────────────────────
@@ -25,6 +25,7 @@ MENU_ITENS = [
     ('lei_cultivo',   '⚖️', 'Lei de Cultivo',          'Habeas corpus, direitos e advogados'),
     ('cultivo',       '🌱', 'Guia de Cultivo',          'Sementes, fases, colheita e cura'),
     ('canabinoides',  '🔬', 'Canabinoides',            'THC, CBD, terpenos e efeitos'),
+    ('variedades',    '🌿', 'Variedades & Strains',    'Kush, Haze, Hemp, Manga Rosa e mais'),
     ('consumo',       '💨', 'Métodos de Consumo',      'Vaporização, sublingual, tópico'),
     ('vaporizadores', '🌬️', 'Vaporizadores',           'Tipos, câmaras e como escolher'),
     ('associacoes',   '🏛️', 'Associações',             'Como funciona no Brasil'),
@@ -36,6 +37,7 @@ MENU_ITENS = [
 _FONTES = [
     ('cultivo',       CULTIVO),
     ('canabinoides',  CANABINOIDES),
+    ('variedades',    VARIEDADES),
     ('consumo',       CONSUMO),
     ('vaporizadores', VAPORIZADORES),
     ('associacoes',   ASSOCIACOES),

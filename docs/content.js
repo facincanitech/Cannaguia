@@ -270,7 +270,102 @@ const ONDE_COMPRAR = {
   ]
 };
 
-const TODAS_SECOES = [LEI_CULTIVO, CULTIVO, CANABINOIDES, CONSUMO, VAPORIZADORES, ASSOCIACOES, ONDE_COMPRAR];
+const VARIEDADES = {
+  titulo: 'Variedades & Strains',
+  icone: '🌿',
+  id: 'variedades',
+  secoes: [
+    {
+      titulo: '🌿 Hemp — Cânhamo Industrial',
+      itens: [
+        ['O que é o Hemp', '<b>Espécie:</b> Cannabis sativa L. (baixo THC)<br><b>THC:</b> &lt;0,3% (legal internacionalmente)<br><b>CBD:</b> Alto — principal fonte comercial de CBD<br><br>O hemp é cultivado para fibra, óleo de semente, CBD e uso industrial. Não produz efeito psicoativo. É a base da maioria dos produtos CBD vendidos em farmácias e associações no Brasil.<br><br><b>Cultivares conhecidas:</b> Charlotte\'s Web, Elektra, Sour Space Candy, Special Sauce, Hawaiian Haze'],
+        ['Diferença Hemp vs Cannabis "Comum"', '<b>Hemp:</b> Sativa, alta, fibra longa, THC &lt;0,3%, CBD alto<br><b>Cannabis medicinal/recreativa:</b> THC variável (5–30%+), selecionada para flores com tricomas<br><br>Geneticamente são a mesma espécie — a diferença está na seleção ao longo de gerações para perfis opostos de canabinoides.'],
+      ]
+    },
+    {
+      titulo: '🏔️ Família Kush',
+      itens: [
+        ['Hindu Kush', '<b>Origem:</b> Montanhas Hindu Kush (Afeganistão/Paquistão)<br><b>Tipo:</b> Indica pura<br><b>THC:</b> 15–20% | <b>CBD:</b> ~1%<br><b>Terpenos:</b> Mirceno, cariofileno, linalol<br><b>Aroma:</b> Terra, sândalo, pinho suave<br><b>Efeitos:</b> Relaxamento profundo, sedação, analgesia corporal<br><b>Uso médico:</b> Dor crônica, insônia, espasmos musculares<br><b>Perfil:</b> Landrace clássica — base genética de centenas de indica modernas'],
+        ['OG Kush', '<b>Origem:</b> Florida/California, anos 90<br><b>Tipo:</b> Híbrida indica-dominante<br><b>THC:</b> 19–26% | <b>CBD:</b> &lt;1%<br><b>Terpenos:</b> Mirceno, limoneno, cariofileno<br><b>Aroma:</b> Limão, pinho, combustível/diesel<br><b>Efeitos:</b> Euforia inicial, relaxamento profundo, fome intensa<br><b>Uso médico:</b> Dor, estresse, depressão, insônia<br><b>Perfil:</b> Uma das mais influentes do mundo — gerou Bubba Kush, GSC, Gelato e dezenas de outras'],
+        ['Bubba Kush', '<b>Origem:</b> California (OG Kush x landrace afgã)<br><b>Tipo:</b> Indica dominante<br><b>THC:</b> 17–22%<br><b>Terpenos:</b> Mirceno, cariofileno, linalol<br><b>Aroma:</b> Café, cacau, terra, hash<br><b>Efeitos:</b> "Body melt" intenso, sedação, euforia suave<br><b>Uso médico:</b> Insônia severa, dor crônica, TEPT'],
+        ['Purple Kush', '<b>Tipo:</b> Indica pura (Hindu Kush x Purple Afghani)<br><b>THC:</b> 17–22%<br><b>Terpenos:</b> Mirceno, cariofileno, linalol<br><b>Aroma:</b> Uva, terra, doce<br><b>Cor:</b> Flores roxo-intensas por antocianinas (genética, não temperatura)<br><b>Efeitos:</b> Sedação total, relaxamento físico, felicidade<br><b>Uso médico:</b> Insônia, dor, ansiedade noturna'],
+      ]
+    },
+    {
+      titulo: '☀️ Família Haze',
+      itens: [
+        ['Haze Original', '<b>Origem:</b> Santa Cruz, California, anos 60–70<br><b>Tipo:</b> Sativa pura (landrace colombiana, mexicana, tailandesa e indiana)<br><b>THC:</b> 20–23% | <b>Floração:</b> 14–16 semanas<br><b>Terpenos:</b> Terpinoleno, ocimeno, mirceno<br><b>Aroma:</b> Cítrico, floral, terroso suave<br><b>Efeitos:</b> Energizante, criativo, cerebral intenso<br><b>Perfil:</b> Ancestral de quase todas as sativas modernas premium'],
+        ['Amnesia Haze', '<b>Origem:</b> Amsterdam (Haze x afghã/tailandesa/hawaiiana)<br><b>Tipo:</b> Sativa dominante (70–80%)<br><b>THC:</b> 20–25%<br><b>Terpenos:</b> Terpinoleno, mirceno, ocimeno<br><b>Aroma:</b> Limão intenso, terra, especiarias<br><b>Efeitos:</b> Euforia cerebral, foco criativo, energia — pode causar desorientação em doses altas<br><b>Uso médico:</b> Depressão, fadiga, déficit de foco'],
+        ['Super Silver Haze', '<b>Origem:</b> Shantibaba/Mr. Nice Seeds (Haze x Skunk x Northern Lights)<br><b>Tipo:</b> Sativa dominante<br><b>THC:</b> 18–23%<br><b>Terpenos:</b> Mirceno, terpinoleno, cariofileno<br><b>Aroma:</b> Cítrico, skunk, terroso<br><b>Efeitos:</b> Energizante, eufórico, duradouro<br><b>Prêmios:</b> High Times Cannabis Cup 3 anos consecutivos (1997–1999)'],
+        ['Lemon Haze', '<b>Tipo:</b> Sativa dominante (Silver Haze x Lemon Skunk)<br><b>THC:</b> 17–22%<br><b>Terpenos:</b> Limoneno dominante, terpinoleno, cariofileno<br><b>Aroma:</b> Limão siciliano muito intenso, cítrico, doce<br><b>Efeitos:</b> Levantamento de humor, criatividade, alegria<br><b>Uso médico:</b> Depressão, ansiedade leve, fadiga'],
+      ]
+    },
+    {
+      titulo: '🦨 Família Skunk',
+      itens: [
+        ['Skunk #1', '<b>Origem:</b> Sacred Seeds, California, anos 70<br><b>Tipo:</b> Híbrida equilibrada (Afghani x Acapulco Gold x Colombian Gold)<br><b>THC:</b> 15–19%<br><b>Terpenos:</b> Mirceno, cariofileno, limoneno<br><b>Aroma:</b> Forte, penetrante, terra + cítrico — aroma "skunk" clássico<br><b>Efeitos:</b> Equilibrado corpo-mente, eufórico, relaxante<br><b>Legado:</b> Uma das cultivares mais influentes da história — base genética de centenas de híbridas europeias e americanas'],
+        ['Super Skunk', '<b>Tipo:</b> Indica dominante (Skunk #1 x Afghani)<br><b>THC:</b> 18–22%<br><b>Terpenos:</b> Mirceno, cariofileno<br><b>Aroma:</b> Skunk amplificado, mais terroso e pesado<br><b>Efeitos:</b> Mais sedativo que Skunk #1, relaxamento corporal intenso<br><b>Uso médico:</b> Dor, insônia, inapetência'],
+      ]
+    },
+    {
+      titulo: '🌸 Híbridas Premium',
+      itens: [
+        ['Girl Scout Cookies (GSC)', '<b>Origem:</b> Bay Area, California (OG Kush x Durban Poison)<br><b>Tipo:</b> Híbrida indica-dominante<br><b>THC:</b> 19–28%<br><b>Terpenos:</b> Cariofileno, limoneno, linalol<br><b>Aroma:</b> Doce, terra, menta, notas de baunilha<br><b>Efeitos:</b> Euforia cerebral + relaxamento corporal equilibrado, fome intensa, bem-estar<br><b>Uso médico:</b> Dor, náusea, depressão, inapetência<br><b>Filhas famosas:</b> Gelato, Wedding Cake, Sherbet'],
+        ['Gelato (Larry Bird)', '<b>Origem:</b> San Francisco (Sunset Sherbet x Thin Mint GSC)<br><b>Tipo:</b> Híbrida equilibrada a levemente indica<br><b>THC:</b> 20–25%<br><b>Terpenos:</b> Cariofileno, limoneno, mirceno<br><b>Aroma:</b> Doce cremoso, frutas, lavanda — como sorvete<br><b>Efeitos:</b> Euforia rápida e intensa, relaxamento sem sedação total<br><b>Uso médico:</b> Dor muscular, estresse, depressão'],
+        ['Blue Dream', '<b>Origem:</b> California (Blueberry x Haze)<br><b>Tipo:</b> Sativa dominante<br><b>THC:</b> 17–24% | <b>CBD:</b> ~2%<br><b>Terpenos:</b> Mirceno, cariofileno, pineno<br><b>Aroma:</b> Mirtilo/blueberry, frutal, doce<br><b>Efeitos:</b> Euforia cerebral suave, motivação, relaxamento sem sedação<br><b>Uso médico:</b> Depressão, fadiga, dor leve — ótima para uso diurno'],
+        ['White Widow', '<b>Origem:</b> Holanda, anos 90 (Brazilian Sativa x South Indian Indica)<br><b>Tipo:</b> Híbrida equilibrada<br><b>THC:</b> 18–25%<br><b>Terpenos:</b> Mirceno, cariofileno, pineno<br><b>Aroma:</b> Pinho, terra, amadeirado<br><b>Visual:</b> Flores cobertas de tricomas brancos — daí o nome<br><b>Efeitos:</b> Energizante, conversação, euforia cerebral + relaxamento leve<br><b>Uso médico:</b> Depressão, fadiga, dor leve, estresse'],
+        ['Gorilla Glue #4 (GG4)', '<b>Origem:</b> GG Strains (Chem\'s Sister x Sour Dubb x Chocolate Diesel)<br><b>Tipo:</b> Híbrida indica-dominante<br><b>THC:</b> 25–30%+<br><b>Terpenos:</b> Cariofileno, mirceno, limoneno<br><b>Aroma:</b> Diesel, terra, café, pinho<br><b>Efeitos:</b> Sedação intensa, "colado no sofá", euforia inicial, analgesia potente<br><b>Uso médico:</b> Dor severa, insônia, TEPT — <b>não recomendada para iniciantes</b>'],
+        ['Wedding Cake (Pink Cookies)', '<b>Tipo:</b> Indica dominante (Triangle Kush x Animal Mints)<br><b>THC:</b> 22–27%<br><b>Terpenos:</b> Cariofileno, limoneno, mirceno<br><b>Aroma:</b> Baunilha, doce, terra, pimenta<br><b>Efeitos:</b> Relaxamento profundo, euforia inicial, sedação gradual<br><b>Uso médico:</b> Dor crônica, ansiedade, insônia'],
+      ]
+    },
+    {
+      titulo: '🌴 Sativas Tropicais & Landrace',
+      itens: [
+        ['Durban Poison', '<b>Origem:</b> Durban, África do Sul — landrace pura<br><b>Tipo:</b> Sativa pura<br><b>THC:</b> 18–26%<br><b>Terpenos:</b> Terpinoleno, ocimeno, mirceno<br><b>Aroma:</b> Anis, alcaçuz, doce, terra<br><b>Efeitos:</b> Energizante extremo, foco intenso, produtividade — "o espresso da cannabis"<br><b>Uso médico:</b> Depressão, TDAH, fadiga, náusea<br><b>Perfil:</b> Genética base para GSC, Cookies e muitas híbridas modernas'],
+        ['Jack Herer', '<b>Origem:</b> Holanda, anos 90 (Haze x Red Skunk x Northern Lights #5)<br><b>Tipo:</b> Sativa dominante<br><b>THC:</b> 18–24% | <b>CBD:</b> ~1%<br><b>Terpenos:</b> Terpinoleno, pineno, ocimeno<br><b>Aroma:</b> Pinho, especiarias, cítrico, floral<br><b>Efeitos:</b> Clareza mental, criatividade, foco, levantamento de humor<br><b>Uso médico:</b> Depressão, TDAH, fadiga, náusea matinal'],
+        ['Manga Rosa (Brazilian)', '<b>Origem:</b> Brasil — cultivar nacional muito popular<br><b>Tipo:</b> Híbrida sativa-dominante<br><b>THC:</b> 16–22%<br><b>Terpenos:</b> Mirceno dominante, limoneno<br><b>Aroma:</b> Manga tropical intensa, doce, frutado — muito reconhecível e valorizado<br><b>Efeitos:</b> Euforia, alegria, relaxamento suave, sociável<br><b>Uso médico:</b> Depressão, estresse, inapetência<br><b>Perfil:</b> Uma das mais amadas no Brasil pela identidade tropical'],
+        ['Pineapple Express', '<b>Tipo:</b> Híbrida sativa-dominante (Trainwreck x Hawaiian)<br><b>THC:</b> 19–25%<br><b>Terpenos:</b> Terpinoleno, ocimeno, cariofileno<br><b>Aroma:</b> Abacaxi tropical, cítrico, pinho<br><b>Efeitos:</b> Energizante, eufórico, criativo, levantamento de humor<br><b>Uso médico:</b> Depressão, fadiga, dor leve'],
+        ['Hawaiian Haze', '<b>Tipo:</b> Sativa hemp/CBD ou sativa recreativa<br><b>THC:</b> &lt;0,3% (versão hemp) | variável em recreativa<br><b>CBD:</b> Alto na versão hemp<br><b>Terpenos:</b> Ocimeno, mirceno, terpinoleno<br><b>Aroma:</b> Tropical, floral, frutas exóticas<br><b>Efeitos:</b> Levantamento de humor, energia suave<br><b>Perfil:</b> Popular como hemp CBD de sabor agradável'],
+      ]
+    },
+    {
+      titulo: '❄️ Indica Clássicas',
+      itens: [
+        ['Northern Lights #5', '<b>Origem:</b> Seattle/Amsterdam (landrace afghã x thai)<br><b>Tipo:</b> Indica quase pura<br><b>THC:</b> 16–21%<br><b>Terpenos:</b> Mirceno, linalol, cariofileno<br><b>Aroma:</b> Pinho, terra, notas adocicadas<br><b>Efeitos:</b> Sedação física profunda, euforia suave, analgesia<br><b>Uso médico:</b> Insônia, dor crônica, espasmos, TEPT<br><b>Legado:</b> Múltiplos Cannabis Cup, base para Shiva Skunk, Cheese e muitas indica europeias'],
+        ['Blueberry', '<b>Origem:</b> DJ Short, anos 70 (afghã x thai x mexicana)<br><b>Tipo:</b> Indica dominante<br><b>THC:</b> 17–20%<br><b>Terpenos:</b> Mirceno, linalol, cariofileno<br><b>Aroma:</b> Mirtilo fresco, doce, floral — muito característico<br><b>Cor:</b> Pode desenvolver tons azuis/roxos no frio<br><b>Efeitos:</b> Relaxante, felicidade, sedação gradual<br><b>Uso médico:</b> Insônia, dor, estresse<br><b>Legado:</b> Genitor do Blue Dream e muitas "Blue" strains'],
+        ['Afghan Kush', '<b>Origem:</b> Afeganistão — landrace pura<br><b>Tipo:</b> Indica pura<br><b>THC:</b> 15–20% | <b>Resina:</b> Altíssima (base para haxixe)<br><b>Terpenos:</b> Mirceno, cariofileno, humuleno<br><b>Aroma:</b> Terra, hash, madeira, doce suave<br><b>Efeitos:</b> Sedação pesada, relaxamento total, sono<br><b>Uso médico:</b> Insônia severa, dor intensa, ansiedade grave'],
+      ]
+    },
+    {
+      titulo: '🍋 Strains CBD Alto (Medicinais)',
+      itens: [
+        ["Charlotte's Web", "<b>Origem:</b> Colorado (Stanley Brothers, 2011)<br><b>Tipo:</b> Hemp — sativa<br><b>CBD:</b> 13–20% | <b>THC:</b> &lt;0,3%<br><b>Terpenos:</b> Mirceno, cariofileno, terpinoleno<br><b>Aroma:</b> Floral, terra, pinho suave<br><b>Efeitos:</b> Sem psicoativo — anti-inflamatório, ansiolítico, anticonvulsivante<br><b>História:</b> Desenvolvida para Charlotte Figi, criança com síndrome de Dravet — reduziu convulsões de 300/sem para ~3/mês<br><b>No Brasil:</b> Disponível via importação Anvisa"],
+        ['ACDC', '<b>Tipo:</b> Híbrida CBD (Cannatonic x Ruderalis)<br><b>CBD:</b> 14–20% | <b>THC:</b> &lt;1% | <b>Ratio:</b> ~20:1 CBD:THC<br><b>Terpenos:</b> Mirceno, cariofileno, pineno<br><b>Aroma:</b> Terra, pinho, frutal suave<br><b>Efeitos:</b> Sem psicoativo — analgesia, ansiolítico, anti-inflamatório<br><b>Uso médico:</b> Dor neuropática, esclerose múltipla, epilepsia, ansiedade'],
+        ['Cannatonic', '<b>Tipo:</b> Híbrida equilibrada (MK Ultra x G13 Haze)<br><b>CBD:</b> 6–17% | <b>THC:</b> 6–17% | <b>Ratio:</b> 1:1 a 5:1 CBD:THC<br><b>Terpenos:</b> Mirceno, cariofileno, pineno<br><b>Aroma:</b> Cítrico, terra, pinho<br><b>Efeitos:</b> Relaxamento sem sedação, clareza mental, analgesia suave<br><b>Uso médico:</b> Dor, ansiedade, espasmos — versatilidade para uso diurno'],
+        ['Harlequin', '<b>Tipo:</b> Sativa dominante CBD (Colombia x Nepal x Thailand x Switzerland)<br><b>CBD:</b> 8–16% | <b>THC:</b> 4–7% | <b>Ratio:</b> ~5:2 CBD:THC<br><b>Terpenos:</b> Mirceno, cariofileno, pineno<br><b>Aroma:</b> Manga, musk, terra<br><b>Efeitos:</b> Alerta, foco, analgesia sem intoxicação<br><b>Uso médico:</b> Dor, inflamação, ansiedade — ideal para uso diurno'],
+      ]
+    },
+    {
+      titulo: '🔮 Exóticas & Tendências',
+      itens: [
+        ['Runtz (White/Pink)', '<b>Origem:</b> California (Zkittlez x Gelato)<br><b>Tipo:</b> Híbrida equilibrada<br><b>THC:</b> 19–29%<br><b>Terpenos:</b> Cariofileno, limoneno, linalol<br><b>Aroma:</b> Balas de fruta, doce, cremoso — muito distinto<br><b>Efeitos:</b> Euforia intensa e duradoura, relaxamento corporal, fome<br><b>Visual:</b> Flores multicoloridas (verde, roxo, laranja)'],
+        ['Zkittlez', '<b>Origem:</b> California (Grape Ape x Grapefruit)<br><b>Tipo:</b> Indica dominante<br><b>THC:</b> 15–23%<br><b>Terpenos:</b> Cariofileno, linalol, humuleno<br><b>Aroma:</b> Frutas tropicais, uva, balas — muito adocicado<br><b>Efeitos:</b> Relaxamento, felicidade, levantamento de humor, sedação suave<br><b>Prêmios:</b> Melhor indica no Emerald Cup 2016'],
+        ['MAC (Miracle Alien Cookies)', '<b>Tipo:</b> Híbrida (Alien Cookies x Colombian x Starfighter)<br><b>THC:</b> 20–26%<br><b>Terpenos:</b> Cariofileno, limoneno, mirceno<br><b>Aroma:</b> Floral, cítrico, cremoso, diesel suave<br><b>Efeitos:</b> Euforia criativa equilibrada com relaxamento<br><b>Visual:</b> Tricomas excepcionalmente densos'],
+        ['Mimosa', '<b>Tipo:</b> Sativa dominante (Clementine x Purple Punch)<br><b>THC:</b> 19–27%<br><b>Terpenos:</b> Limoneno, cariofileno, mirceno<br><b>Aroma:</b> Laranja fresca, cítrico, floral — como a bebida<br><b>Efeitos:</b> Levantamento de humor, energia, criatividade, sociável<br><b>Uso médico:</b> Depressão, fadiga, ansiedade social'],
+        ['Gelato 41 / 45', '<b>Tipo:</b> Variações da família Gelato (Cookie Fam Genetics)<br><b>THC:</b> 20–26%<br><b>Diferenças:</b><br><b>#41 (Bacio Gelato):</b> Mais escura, floral, intensa — sedação<br><b>#45 (Sundae Driver cross):</b> Mais doce, frutada, equilibrada<br><b>Terpenos:</b> Cariofileno, mirceno, limoneno<br><b>Perfil:</b> Numeração indica fenotipo diferente da mesma cruz genética'],
+      ]
+    },
+    {
+      titulo: '📊 Como Comparar Strains',
+      itens: [
+        ['O Que Realmente Importa', 'O nome de uma strain é guia, não garantia. O efeito real depende de:<br><br>1. <b>Perfil de canabinoides:</b> THC%, CBD%, CBG%, CBN%<br>2. <b>Perfil de terpenos:</b> Mirceno, limoneno, cariofileno, etc.<br>3. <b>Fenotipo:</b> A mesma strain cultivada diferente pode variar muito<br>4. <b>Cura e armazenamento:</b> Afetam terpenos residuais<br>5. <b>Seu endocanabinoide individual:</b> Cada pessoa responde diferente<br><br><i>Strains com nomes iguais de produtores diferentes podem ter perfis completamente distintos.</i>'],
+        ['Indica vs Sativa — A Verdade Científica', 'A distinção indica/sativa como preditor de efeito é <b>simplificada e frequentemente imprecisa</b>.<br><br>O que realmente define o efeito:<br>• <b>Relação THC:CBD</b> — quanto CBD há para modular o THC<br>• <b>Terpenos dominantes</b> — mirceno = sedativo, limoneno/terpinoleno = energizante<br>• <b>Sua tolerância e bioquímica</b><br><br>Conclusão: leia o COA (laudo de análise) e os terpenos, não apenas "indica ou sativa".'],
+      ]
+    },
+  ]
+};
+
+const TODAS_SECOES = [LEI_CULTIVO, CULTIVO, CANABINOIDES, VARIEDADES, CONSUMO, VAPORIZADORES, ASSOCIACOES, ONDE_COMPRAR];
 
 // Quiz data
 const PERGUNTAS = [
