@@ -949,6 +949,140 @@ CONSUMO = {
 }
 
 # ─────────────────────────────────────────────────────────────────────────────
+# PLANTAS PARA VAPORIZAR
+# ─────────────────────────────────────────────────────────────────────────────
+PLANTAS_VAPORIZAR = {
+    'titulo': 'Plantas para Vaporizar',
+    'icone': '🌾',
+    'secoes': [
+        {
+            'titulo': '🌿 Por Que Vaporizar Plantas Medicinais',
+            'itens': [
+                ('Muito além da cannabis',
+                 'Os vaporizadores de ervas permitem consumir uma grande variedade '
+                 'de plantas medicinais — seja com fins terapêuticos, para explorar '
+                 'novos sabores ou para criar blends com cannabis.\n\n'
+                 'A vaporização segue os princípios da [b]aromaterapia[/b]: '
+                 'ativa os óleos essenciais das plantas sem desperdiçar terpenos, '
+                 'sem combustão e sem os compostos tóxicos da fumaça.\n\n'
+                 'E o melhor: todas as plantas desta lista são [b]legalizadas[/b] '
+                 'e disponíveis em feiras, mercados e lojas de produtos naturais.'),
+                ('Blends com Cannabis',
+                 'Misturar ervas medicinais com cannabis potencializa efeitos '
+                 'e cria perfis de sabor únicos. Exemplos:\n\n'
+                 '• [b]Cannabis + lavanda:[/b] Relaxamento amplificado, ideal para insônia\n'
+                 '• [b]Cannabis + hortelã:[/b] Frescor + alívio de náuseas\n'
+                 '• [b]Cannabis + camomila:[/b] Sedação suave e sabor agradável\n'
+                 '• [b]Cannabis sativa + alecrim:[/b] Realça euforia e relaxamento\n\n'
+                 'Comece com proporções pequenas da erva nova e ajuste conforme a preferência.'),
+            ]
+        },
+        {
+            'titulo': '🌺 As 10 Plantas',
+            'itens': [
+                ('1 — Damiana (Turnera diffusa)  🌡️ 150–175°C',
+                 '[b]Origem:[/b] Nativa da América Central\n'
+                 '[b]Sabor:[/b] Leve e adocicado\n'
+                 '[b]Efeitos:[/b] Afrodisíaco, antidepressivo, relaxante\n'
+                 '[b]Indicada para:[/b] Bronquite, problemas digestivos, cólicas '
+                 'menstruais, febre, reumatismo, asma e depressão\n'
+                 '[b]Temperatura:[/b] 150–175°C\n\n'
+                 'Muito consumida como chá, produz nuvens suaves quando vaporizada. '
+                 'Longa trajetória de uso medicinal e recreativo.'),
+                ('2 — Camomila (Matricaria recutita)  🌡️ 100–125°C',
+                 '[b]Sabor:[/b] Floral, suave, característico\n'
+                 '[b]Efeitos:[/b] Sedativo, ansiolítico, relaxante\n'
+                 '[b]Indicada para:[/b] Estresse, dores de cabeça, ansiedade, '
+                 'depressão e náuseas\n'
+                 '[b]Temperatura:[/b] 100–125°C\n\n'
+                 'Excelente em blends com cannabis para uma experiência mais '
+                 'entorpecente e relaxante. Temperatura baixa preserva os compostos ativos.'),
+                ('3 — Manjericão (Ocimum basilicum)  🌡️ 130°C',
+                 '[b]Sabor:[/b] Muito suave e agradável\n'
+                 '[b]Princípio ativo:[/b] Carvacrol — terpeno usado desde a '
+                 'antiguidade para equilíbrio mental\n'
+                 '[b]Indicado para:[/b] Distúrbio bipolar, síndrome do pânico, '
+                 'fobias, ansiedade e estresse\n'
+                 '[b]Temperatura:[/b] 130°C\n\n'
+                 'Encontrado em qualquer cozinha ou jardim. '
+                 'Vapor de sabor característico, muito suave.'),
+                ('4 — Erva-cidreira (Melissa officinalis)  🌡️ 140°C',
+                 '[b]Sabor:[/b] Sutil e refrescante\n'
+                 '[b]Efeitos:[/b] Calmante comprovado cientificamente, '
+                 'relaxa o sistema nervoso, induz o sono\n'
+                 '[b]Indicada para:[/b] Insônia, dores de cabeça e ansiedade\n'
+                 '[b]Temperatura:[/b] 140°C'),
+                ('5 — Chá Verde (Camellia sinensis)  🌡️ 190°C',
+                 '[b]Sabor:[/b] Agradável e pungente\n'
+                 '[b]Efeitos:[/b] Estimulante suave, analgésico, antifadiga\n'
+                 '[b]Indicado para:[/b] Dores, fadiga, sonolência e indigestão\n'
+                 '[b]Temperatura:[/b] 190°C\n\n'
+                 'Muito utilizado pelos orientais. O vapor é especialmente '
+                 'agradável na temperatura indicada.'),
+                ('6 — Lúpulo (Humulus lupulus)  🌡️ 175–200°C',
+                 '[b]Sabor:[/b] Variável conforme o tipo — herbáceo, '
+                 'amadeirado ou floral\n'
+                 '[b]Efeitos:[/b] Analgésico (incluindo cólicas menstruais), '
+                 'melhora desempenho sexual e saúde pulmonar\n'
+                 '[b]Indicado para:[/b] Dores em geral, inflamações\n'
+                 '[b]Temperatura:[/b] 175–200°C\n\n'
+                 'Tradicionamente usado em cervejas. Óleos essenciais são '
+                 'ativados durante a vaporização. Existem vários tipos com '
+                 'características distintas de aroma e sabor.'),
+                ('7 — Hortelã-pimenta (Mentha × piperita)  🌡️ 160°C',
+                 '[b]Sabor:[/b] Incomparavelmente refrescante e aromático\n'
+                 '[b]Princípio ativo:[/b] Mentol\n'
+                 '[b]Efeitos:[/b] Descongestionante, antiestresse, antialérgico\n'
+                 '[b]Indicada para:[/b] Estresse, alergias, asma e náuseas\n'
+                 '[b]Temperatura:[/b] 160°C\n\n'
+                 'Produz um vapor deliciosamente aromático. '
+                 'Ótima para blends — refresca qualquer mistura.'),
+                ('8 — Eucalipto (Eucalyptus)  🌡️ 130°C',
+                 '[b]Sabor:[/b] Aroma inconfundível, forte e mentolado\n'
+                 '[b]Efeitos:[/b] Expectorante, broncodilatador, antisséptico\n'
+                 '[b]Indicado para:[/b] Doenças respiratórias, asma e bronquite\n'
+                 '[b]Temperatura:[/b] 130°C\n\n'
+                 'Reconhecidas propriedades expectorantes. '
+                 'Ideal para quem sofre com vias aéreas congestionadas.'),
+                ('9 — Lavanda (Lavandula dentata)  🌡️ 100–125°C',
+                 '[b]Sabor:[/b] Floral e adocicado\n'
+                 '[b]Princípio ativo:[/b] Linalol (mesmo terpeno presente em muitas '
+                 'cultivares de cannabis)\n'
+                 '[b]Efeitos:[/b] Ansiolítico, sedativo, analgésico\n'
+                 '[b]Indicada para:[/b] Insônia, dores e bem-estar geral\n'
+                 '[b]Temperatura:[/b] 100–125°C\n\n'
+                 'Temperaturas baixas preservam o linalol. '
+                 'Promove bem-estar imediato do corpo e da mente.'),
+                ('10 — Alecrim (Rosmarinus officinalis)  🌡️ até 125°C',
+                 '[b]Sabor:[/b] Agradável e único, herbáceo\n'
+                 '[b]Princípio ativo:[/b] α-Pineno, cânfora\n'
+                 '[b]Efeitos:[/b] Estimulante cerebral, analgésico, antidepressivo\n'
+                 '[b]Indicado para:[/b] Enxaquecas, depressão e dores\n'
+                 '[b]Temperatura:[/b] Até 125°C (não ultrapassar para preservar terpenos)\n\n'
+                 'Muito usado em chás e temperos. Combinado com cannabis sativa '
+                 'pode realçar os efeitos de relaxamento e euforia.'),
+            ]
+        },
+        {
+            'titulo': '🌡️ Tabela de Temperaturas',
+            'itens': [
+                ('Referência Rápida',
+                 '[b]100–125°C:[/b] Camomila, Lavanda, Alecrim\n'
+                 '[b]130°C:[/b] Manjericão, Eucalipto\n'
+                 '[b]140°C:[/b] Erva-cidreira\n'
+                 '[b]150–175°C:[/b] Damiana\n'
+                 '[b]160°C:[/b] Hortelã-pimenta\n'
+                 '[b]175–200°C:[/b] Lúpulo\n'
+                 '[b]190°C:[/b] Chá Verde\n\n'
+                 'Compare com cannabis: THC vaporiza a 157°C, CBD a 160–180°C. '
+                 'Em blends, ajuste a temperatura conforme a erva de menor ponto '
+                 'de vaporização para não desperdiçar compostos.'),
+            ]
+        },
+    ]
+}
+
+# ─────────────────────────────────────────────────────────────────────────────
 # VAPORIZADORES
 # ─────────────────────────────────────────────────────────────────────────────
 VAPORIZADORES = {

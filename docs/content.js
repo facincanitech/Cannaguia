@@ -377,7 +377,44 @@ const VARIEDADES = {
   ]
 };
 
-const TODAS_SECOES = [LEI_CULTIVO, CULTIVO, CANABINOIDES, VARIEDADES, CONSUMO, VAPORIZADORES, ASSOCIACOES, ONDE_COMPRAR];
+const PLANTAS_VAPORIZAR = {
+  titulo: 'Plantas para Vaporizar',
+  icone: '🌾',
+  id: 'plantas_vaporizar',
+  fonte: 'Fonte: maryjuana.com.br',
+  secoes: [
+    {
+      titulo: '🌿 Por Que Vaporizar Plantas Medicinais',
+      itens: [
+        ['Muito além da cannabis', 'Os vaporizadores de ervas permitem consumir uma grande variedade de plantas medicinais — seja com fins terapêuticos, para explorar novos sabores ou para criar blends com cannabis.<br><br>A vaporização segue os princípios da <b>aromaterapia</b>: ativa os óleos essenciais das plantas sem desperdiçar terpenos, sem combustão e sem os compostos tóxicos da fumaça.<br><br>E o melhor: todas as plantas desta lista são <b>legalizadas</b> e disponíveis em feiras, mercados e lojas de produtos naturais.'],
+        ['Blends com Cannabis', 'Misturar ervas medicinais com cannabis potencializa efeitos e cria perfis de sabor únicos. Exemplos:<br><br>• <b>Cannabis + lavanda:</b> Relaxamento amplificado, ideal para insônia<br>• <b>Cannabis + hortelã:</b> Frescor + alívio de náuseas<br>• <b>Cannabis + camomila:</b> Sedação suave e sabor agradável<br>• <b>Cannabis sativa + alecrim:</b> Realça euforia e relaxamento<br><br>Comece com proporções pequenas da erva nova e ajuste conforme a preferência.'],
+      ]
+    },
+    {
+      titulo: '🌺 As 10 Plantas',
+      itens: [
+        ['1 — Damiana (Turnera diffusa)  🌡️ 150–175°C', '<b>Origem:</b> Nativa da América Central<br><b>Sabor:</b> Leve e adocicado<br><b>Efeitos:</b> Afrodisíaco, antidepressivo, relaxante<br><b>Indicada para:</b> Bronquite, problemas digestivos, cólicas menstruais, febre, reumatismo, asma e depressão<br><b>Temperatura:</b> 150–175°C<br><br>Muito consumida como chá, produz nuvens suaves quando vaporizada. Longa trajetória de uso medicinal e recreativo.'],
+        ['2 — Camomila (Matricaria recutita)  🌡️ 100–125°C', '<b>Sabor:</b> Floral, suave, característico<br><b>Efeitos:</b> Sedativo, ansiolítico, relaxante<br><b>Indicada para:</b> Estresse, dores de cabeça, ansiedade, depressão e náuseas<br><b>Temperatura:</b> 100–125°C<br><br>Excelente em blends com cannabis para uma experiência mais entorpecente e relaxante. Temperatura baixa preserva os compostos ativos.'],
+        ['3 — Manjericão (Ocimum basilicum)  🌡️ 130°C', '<b>Sabor:</b> Muito suave e agradável<br><b>Princípio ativo:</b> Carvacrol — terpeno usado desde a antiguidade para equilíbrio mental<br><b>Indicado para:</b> Distúrbio bipolar, síndrome do pânico, fobias, ansiedade e estresse<br><b>Temperatura:</b> 130°C<br><br>Encontrado em qualquer cozinha ou jardim. Vapor de sabor característico, muito suave.'],
+        ['4 — Erva-cidreira (Melissa officinalis)  🌡️ 140°C', '<b>Sabor:</b> Sutil e refrescante<br><b>Efeitos:</b> Calmante comprovado cientificamente, relaxa o sistema nervoso, induz o sono<br><b>Indicada para:</b> Insônia, dores de cabeça e ansiedade<br><b>Temperatura:</b> 140°C'],
+        ['5 — Chá Verde (Camellia sinensis)  🌡️ 190°C', '<b>Sabor:</b> Agradável e pungente<br><b>Efeitos:</b> Estimulante suave, analgésico, antifadiga<br><b>Indicado para:</b> Dores, fadiga, sonolência e indigestão<br><b>Temperatura:</b> 190°C<br><br>Muito utilizado pelos orientais. O vapor é especialmente agradável na temperatura indicada.'],
+        ['6 — Lúpulo (Humulus lupulus)  🌡️ 175–200°C', '<b>Sabor:</b> Variável conforme o tipo — herbáceo, amadeirado ou floral<br><b>Efeitos:</b> Analgésico (incluindo cólicas menstruais), melhora desempenho sexual e saúde pulmonar<br><b>Temperatura:</b> 175–200°C<br><br>Tradicionalmente usado em cervejas. Óleos essenciais ativados durante a vaporização. Existem vários tipos com características distintas de aroma e sabor.'],
+        ['7 — Hortelã-pimenta (Mentha × piperita)  🌡️ 160°C', '<b>Sabor:</b> Incomparavelmente refrescante e aromático<br><b>Princípio ativo:</b> Mentol<br><b>Efeitos:</b> Descongestionante, antiestresse, antialérgico<br><b>Indicada para:</b> Estresse, alergias, asma e náuseas<br><b>Temperatura:</b> 160°C<br><br>Produz um vapor deliciosamente aromático. Ótima para blends — refresca qualquer mistura.'],
+        ['8 — Eucalipto (Eucalyptus)  🌡️ 130°C', '<b>Sabor:</b> Aroma inconfundível, forte e mentolado<br><b>Efeitos:</b> Expectorante, broncodilatador, antisséptico<br><b>Indicado para:</b> Doenças respiratórias, asma e bronquite<br><b>Temperatura:</b> 130°C<br><br>Reconhecidas propriedades expectorantes. Ideal para quem sofre com vias aéreas congestionadas.'],
+        ['9 — Lavanda (Lavandula dentata)  🌡️ 100–125°C', '<b>Sabor:</b> Floral e adocicado<br><b>Princípio ativo:</b> Linalol (mesmo terpeno presente em muitas cultivares de cannabis)<br><b>Efeitos:</b> Ansiolítico, sedativo, analgésico<br><b>Indicada para:</b> Insônia, dores e bem-estar geral<br><b>Temperatura:</b> 100–125°C<br><br>Temperaturas baixas preservam o linalol. Promove bem-estar imediato do corpo e da mente.'],
+        ['10 — Alecrim (Rosmarinus officinalis)  🌡️ até 125°C', '<b>Sabor:</b> Agradável e único, herbáceo<br><b>Princípios ativos:</b> α-Pineno, cânfora<br><b>Efeitos:</b> Estimulante cerebral, analgésico, antidepressivo<br><b>Indicado para:</b> Enxaquecas, depressão e dores<br><b>Temperatura:</b> Até 125°C (não ultrapassar para preservar terpenos)<br><br>Muito usado em chás e temperos. Combinado com cannabis sativa pode realçar os efeitos de relaxamento e euforia.'],
+      ]
+    },
+    {
+      titulo: '🌡️ Tabela de Temperaturas',
+      itens: [
+        ['Referência Rápida', '<b>100–125°C:</b> Camomila, Lavanda, Alecrim<br><b>130°C:</b> Manjericão, Eucalipto<br><b>140°C:</b> Erva-cidreira<br><b>150–175°C:</b> Damiana<br><b>160°C:</b> Hortelã-pimenta<br><b>175–200°C:</b> Lúpulo<br><b>190°C:</b> Chá Verde<br><br>Compare com cannabis: THC vaporiza a 157°C, CBD a 160–180°C. Em blends, ajuste a temperatura conforme a erva de menor ponto de vaporização para não desperdiçar compostos.'],
+      ]
+    },
+  ]
+};
+
+const TODAS_SECOES = [LEI_CULTIVO, CULTIVO, CANABINOIDES, VARIEDADES, CONSUMO, PLANTAS_VAPORIZAR, VAPORIZADORES, ASSOCIACOES, ONDE_COMPRAR];
 
 // Quiz data
 const PERGUNTAS = [

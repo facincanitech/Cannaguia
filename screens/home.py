@@ -17,7 +17,7 @@ from theme import (
     VERDE_HOVER, TEXTO_BRANCO, TEXTO_CINZA, TEXTO_MUDO,
     TRANSPARENTE, EMOJI_FONT, LOGO_IMG,
 )
-from content import CULTIVO, CANABINOIDES, VARIEDADES, CONSUMO, VAPORIZADORES, ASSOCIACOES, ONDE_COMPRAR
+from content import CULTIVO, CANABINOIDES, VARIEDADES, CONSUMO, PLANTAS_VAPORIZAR, VAPORIZADORES, ASSOCIACOES, ONDE_COMPRAR
 
 
 # ── Menu principal ────────────────────────────────────────────────────────────
@@ -26,8 +26,9 @@ MENU_ITENS = [
     ('cultivo',       '🌱', 'Guia de Cultivo',          'Sementes, fases, colheita e cura'),
     ('variedades',    '🌿', 'Variedades & Strains',    'Kush, Haze, Hemp, Manga Rosa e mais'),
     ('canabinoides',  '🔬', 'Canabinoides',            'THC, CBD, terpenos e efeitos'),
-    ('consumo',       '💨', 'Métodos de Consumo',      'Vaporização, sublingual, tópico'),
-    ('vaporizadores', '🌬️', 'Vaporizadores',           'Tipos, câmaras e como escolher'),
+    ('consumo',           '💨',  'Métodos de Consumo',      'Vaporização, sublingual, tópico'),
+    ('plantas_vaporizar', '🌾',  'Plantas para Vaporizar',  'Damiana, camomila, lavanda e mais'),
+    ('vaporizadores',     '🌬️', 'Vaporizadores',           'Tipos, câmaras e como escolher'),
     ('associacoes',   '🏛️', 'Associações',             'Como funciona no Brasil'),
     ('onde_comprar',  '🛒', 'Onde Comprar',            'Produtos, sementes e equipamentos'),
     ('quiz',          '🎯', 'Quiz de Direcionamento',  'Descubra o melhor caminho para você'),
@@ -38,8 +39,9 @@ _FONTES = [
     ('cultivo',       CULTIVO),
     ('canabinoides',  CANABINOIDES),
     ('variedades',    VARIEDADES),
-    ('consumo',       CONSUMO),
-    ('vaporizadores', VAPORIZADORES),
+    ('consumo',           CONSUMO),
+    ('plantas_vaporizar', PLANTAS_VAPORIZAR),
+    ('vaporizadores',     VAPORIZADORES),
     ('associacoes',   ASSOCIACOES),
     ('onde_comprar',  ONDE_COMPRAR),
 ]

@@ -98,8 +98,9 @@ const MENU_ITENS = [
   { id: 'cultivo',      icone: '🌱',  label: 'Guia de Cultivo',         sub: 'Sementes, fases, colheita e cura' },
   { id: 'variedades',   icone: '🌿',  label: 'Variedades & Strains',    sub: 'Kush, Haze, Hemp, Manga Rosa e mais' },
   { id: 'canabinoides', icone: '🔬',  label: 'Canabinoides & Terpenos', sub: 'THC, CBD, CBG, terpenos' },
-  { id: 'consumo',      icone: '💨',  label: 'Métodos de Consumo',      sub: 'Vaporização, óleo, oral' },
-  { id: 'vaporizadores',icone: '🌬️', label: 'Vaporizadores',           sub: 'Tipos, câmaras, escolha' },
+  { id: 'consumo',           icone: '💨',  label: 'Métodos de Consumo',     sub: 'Vaporização, óleo, oral' },
+  { id: 'plantas_vaporizar', icone: '🌾',  label: 'Plantas para Vaporizar', sub: 'Damiana, camomila, lavanda e mais' },
+  { id: 'vaporizadores',     icone: '🌬️', label: 'Vaporizadores',          sub: 'Tipos, câmaras, escolha' },
   { id: 'associacoes',  icone: '🏛️', label: 'Associações',             sub: 'Como se associar, documentos' },
   { id: 'onde_comprar', icone: '🛒',  label: 'Onde Comprar',            sub: 'Farmácias, associações, lojas' },
   { id: 'quiz',         icone: '🎯',  label: 'Quiz de Direcionamento',  sub: 'Descubra o que é ideal para você' },
@@ -156,6 +157,10 @@ function buildContentScreen(data) {
       </div>`;
     });
   });
+
+  if (data.fonte) {
+    html += `<div style="font-size:11px;color:var(--cinza);text-align:center;padding:8px 0 4px">${data.fonte}</div>`;
+  }
 
   area.innerHTML = html;
   area.scrollTop = 0;
