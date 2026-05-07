@@ -960,7 +960,7 @@ PLANTAS_VAPORIZAR = {
             'itens': [
                 ('Muito além da cannabis',
                  'Os vaporizadores de ervas permitem consumir uma grande variedade '
-                 'de plantas medicinais — seja com fins terapêuticos, para explorar '
+                 'de plantas medicinais, seja com fins terapêuticos, para explorar '
                  'novos sabores ou para criar blends com cannabis.\n\n'
                  'A vaporização segue os princípios da [b]aromaterapia[/b]: '
                  'ativa os óleos essenciais das plantas sem desperdiçar terpenos, '
@@ -980,7 +980,7 @@ PLANTAS_VAPORIZAR = {
         {
             'titulo': '🌺 As 10 Plantas',
             'itens': [
-                ('1 — Damiana (Turnera diffusa)  🌡️ 150–175°C',
+                ('1. Damiana (Turnera diffusa)  🌡️ 150–175°C',
                  '[b]Origem:[/b] Nativa da América Central\n'
                  '[b]Sabor:[/b] Leve e adocicado\n'
                  '[b]Efeitos:[/b] Afrodisíaco, antidepressivo, relaxante\n'
@@ -989,7 +989,7 @@ PLANTAS_VAPORIZAR = {
                  '[b]Temperatura:[/b] 150–175°C\n\n'
                  'Muito consumida como chá, produz nuvens suaves quando vaporizada. '
                  'Longa trajetória de uso medicinal e recreativo.'),
-                ('2 — Camomila (Matricaria recutita)  🌡️ 100–125°C',
+                ('2. Camomila (Matricaria recutita)  🌡️ 100–125°C',
                  '[b]Sabor:[/b] Floral, suave, característico\n'
                  '[b]Efeitos:[/b] Sedativo, ansiolítico, relaxante\n'
                  '[b]Indicada para:[/b] Estresse, dores de cabeça, ansiedade, '
@@ -997,30 +997,30 @@ PLANTAS_VAPORIZAR = {
                  '[b]Temperatura:[/b] 100–125°C\n\n'
                  'Excelente em blends com cannabis para uma experiência mais '
                  'entorpecente e relaxante. Temperatura baixa preserva os compostos ativos.'),
-                ('3 — Manjericão (Ocimum basilicum)  🌡️ 130°C',
+                ('3. Manjericão (Ocimum basilicum)  🌡️ 130°C',
                  '[b]Sabor:[/b] Muito suave e agradável\n'
-                 '[b]Princípio ativo:[/b] Carvacrol — terpeno usado desde a '
+                 '[b]Princípio ativo:[/b] Carvacrol, terpeno usado desde a '
                  'antiguidade para equilíbrio mental\n'
                  '[b]Indicado para:[/b] Distúrbio bipolar, síndrome do pânico, '
                  'fobias, ansiedade e estresse\n'
                  '[b]Temperatura:[/b] 130°C\n\n'
                  'Encontrado em qualquer cozinha ou jardim. '
                  'Vapor de sabor característico, muito suave.'),
-                ('4 — Erva-cidreira (Melissa officinalis)  🌡️ 140°C',
+                ('4. Erva-cidreira (Melissa officinalis)  🌡️ 140°C',
                  '[b]Sabor:[/b] Sutil e refrescante\n'
                  '[b]Efeitos:[/b] Calmante comprovado cientificamente, '
                  'relaxa o sistema nervoso, induz o sono\n'
                  '[b]Indicada para:[/b] Insônia, dores de cabeça e ansiedade\n'
                  '[b]Temperatura:[/b] 140°C'),
-                ('5 — Chá Verde (Camellia sinensis)  🌡️ 190°C',
+                ('5. Chá Verde (Camellia sinensis)  🌡️ 190°C',
                  '[b]Sabor:[/b] Agradável e pungente\n'
                  '[b]Efeitos:[/b] Estimulante suave, analgésico, antifadiga\n'
                  '[b]Indicado para:[/b] Dores, fadiga, sonolência e indigestão\n'
                  '[b]Temperatura:[/b] 190°C\n\n'
                  'Muito utilizado pelos orientais. O vapor é especialmente '
                  'agradável na temperatura indicada.'),
-                ('6 — Lúpulo (Humulus lupulus)  🌡️ 175–200°C',
-                 '[b]Sabor:[/b] Variável conforme o tipo — herbáceo, '
+                ('6. Lúpulo (Humulus lupulus)  🌡️ 175–200°C',
+                 '[b]Sabor:[/b] Variável conforme o tipo, herbáceo, '
                  'amadeirado ou floral\n'
                  '[b]Efeitos:[/b] Analgésico (incluindo cólicas menstruais), '
                  'melhora desempenho sexual e saúde pulmonar\n'
@@ -1029,22 +1029,22 @@ PLANTAS_VAPORIZAR = {
                  'Tradicionamente usado em cervejas. Óleos essenciais são '
                  'ativados durante a vaporização. Existem vários tipos com '
                  'características distintas de aroma e sabor.'),
-                ('7 — Hortelã-pimenta (Mentha × piperita)  🌡️ 160°C',
+                ('7. Hortelã-pimenta (Mentha × piperita)  🌡️ 160°C',
                  '[b]Sabor:[/b] Incomparavelmente refrescante e aromático\n'
                  '[b]Princípio ativo:[/b] Mentol\n'
                  '[b]Efeitos:[/b] Descongestionante, antiestresse, antialérgico\n'
                  '[b]Indicada para:[/b] Estresse, alergias, asma e náuseas\n'
                  '[b]Temperatura:[/b] 160°C\n\n'
                  'Produz um vapor deliciosamente aromático. '
-                 'Ótima para blends — refresca qualquer mistura.'),
-                ('8 — Eucalipto (Eucalyptus)  🌡️ 130°C',
+                 'Ótima para blends, refresca qualquer mistura.'),
+                ('8. Eucalipto (Eucalyptus)  🌡️ 130°C',
                  '[b]Sabor:[/b] Aroma inconfundível, forte e mentolado\n'
                  '[b]Efeitos:[/b] Expectorante, broncodilatador, antisséptico\n'
                  '[b]Indicado para:[/b] Doenças respiratórias, asma e bronquite\n'
                  '[b]Temperatura:[/b] 130°C\n\n'
                  'Reconhecidas propriedades expectorantes. '
                  'Ideal para quem sofre com vias aéreas congestionadas.'),
-                ('9 — Lavanda (Lavandula dentata)  🌡️ 100–125°C',
+                ('9. Lavanda (Lavandula dentata)  🌡️ 100–125°C',
                  '[b]Sabor:[/b] Floral e adocicado\n'
                  '[b]Princípio ativo:[/b] Linalol (mesmo terpeno presente em muitas '
                  'cultivares de cannabis)\n'
@@ -1053,7 +1053,7 @@ PLANTAS_VAPORIZAR = {
                  '[b]Temperatura:[/b] 100–125°C\n\n'
                  'Temperaturas baixas preservam o linalol. '
                  'Promove bem-estar imediato do corpo e da mente.'),
-                ('10 — Alecrim (Rosmarinus officinalis)  🌡️ até 125°C',
+                ('10. Alecrim (Rosmarinus officinalis)  🌡️ até 125°C',
                  '[b]Sabor:[/b] Agradável e único, herbáceo\n'
                  '[b]Princípio ativo:[/b] α-Pineno, cânfora\n'
                  '[b]Efeitos:[/b] Estimulante cerebral, analgésico, antidepressivo\n'
